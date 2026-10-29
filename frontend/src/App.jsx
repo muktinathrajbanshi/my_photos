@@ -1,10 +1,11 @@
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
-    <div>
-      Hello!
-    </div>
-  )
-}
+    <>
+      <Toaster position="bottom-right" />
+    </>
+  );
+};
 
-export default App
+export default App;
