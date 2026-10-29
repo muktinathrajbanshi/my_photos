@@ -1,5 +1,10 @@
-const AlbumsPage = () => {
-  return <div>AlbumsPage</div>;
-};
 
-export default AlbumsPage;
+const AlbumsPage = () => {
+  return (
+    <div>
+      AlbumsPage
+    </div>
+  )
+}
+
+export default AlbumsPage

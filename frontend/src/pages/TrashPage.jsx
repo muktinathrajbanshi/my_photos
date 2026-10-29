@@ -1,5 +1,10 @@
-const TrashPage = () => {
-  return <div>TrashPage</div>;
-};
 
-export default TrashPage;
+const TrashPage = () => {
+  return (
+    <div>
+      TrashPage
+    </div>
+  )
+}
+
+export default TrashPage
