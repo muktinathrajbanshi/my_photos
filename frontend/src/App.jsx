@@ -7,10 +7,13 @@ const App = () => {
   return (
     <>
       <Toaster position="bottom-right" />
+
       <Routes>
         <Route path="/login" element={<AuthPage />} />
-        <Route element={<AppLayout />}></Route>
+
         {/* Protected route  */}
+        <Route element={<AppLayout />}>
+        <Route path="/" element={"PhotosPage"} />
       </Routes>
     </>
   );
