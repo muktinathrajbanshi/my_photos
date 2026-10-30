@@ -17,15 +17,16 @@ const App = () => {
         <Route path="/login" element={<AuthPage />} />
 
         {/* Protected route  */}
-        <Route element={<AppLayout />} />
-        <Route path="/" element={<PhotosPage />} />
-        <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="/albums" element={<AlbumsPage />} />
-        <Route path="/albums/:id" element={<AlbumDetailPage />} />
-        <Route path="/trash" element={<TrashPage />} />
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<PhotosPage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/albums" element={<AlbumsPage />} />
+          <Route path="/albums/:id" element={<AlbumDetailPage />} />
+          <Route path="/trash" element={<TrashPage />} />
 
-        {/* Fallback  */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+          {/* Fallback  */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
       </Routes>
     </>
   );
