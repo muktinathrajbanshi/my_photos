@@ -4,6 +4,7 @@ import AuthPage from "./pages/AuthPage";
 import AppLayout from "./components/layout/AppLayout";
 import PhotosPage from "./pages/PhotosPage";
 import FavoritesPage from "./pages/FavoritesPage";
+import AlbumDetailPage from "./pages/AlbumDetailPage";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" element={<PhotosPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/albums" element={<PhotosPage />} />
+        <Route path="/albums/:id" element={<AlbumDetailPage />} />
       </Routes>
     </>
   );
