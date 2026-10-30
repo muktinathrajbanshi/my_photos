@@ -1,10 +1,5 @@
-
 const PhotosPage = () => {
-  return (
-    <div>
-      PhotosPage
-    </div>
-  )
-}
+  return <div>PhotosPage</div>;
+};
 
-export default PhotosPage
+export default PhotosPage;
