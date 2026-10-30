@@ -23,10 +23,10 @@ const App = () => {
           <Route path="/albums" element={<AlbumsPage />} />
           <Route path="/albums/:id" element={<AlbumDetailPage />} />
           <Route path="/trash" element={<TrashPage />} />
-
-          {/* Fallback  */}
-          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
+
+        {/* Fallback  */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );
