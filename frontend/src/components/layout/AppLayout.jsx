@@ -6,7 +6,7 @@ const AppLayout = () => {
       <p>navbar</p>
       <p>sidebar</p>
 
-      <main>
+      <main className="app-main-content">
         <Outlet />
       </main>
     </div>
