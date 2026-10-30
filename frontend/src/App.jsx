@@ -1,10 +1,12 @@
 import { Toaster } from "react-hot-toast";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import AuthPage from "./pages/AuthPage";
 import AppLayout from "./components/layout/AppLayout";
 import PhotosPage from "./pages/PhotosPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import AlbumDetailPage from "./pages/AlbumDetailPage";
+import AlbumsPage from "./pages/AlbumsPage";
+import TrashPage from "./pages/TrashPage";
 
 const App = () => {
   return (
@@ -18,8 +20,12 @@ const App = () => {
         <Route element={<AppLayout />} />
         <Route path="/" element={<PhotosPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="/albums" element={<PhotosPage />} />
+        <Route path="/albums" element={<AlbumsPage />} />
         <Route path="/albums/:id" element={<AlbumDetailPage />} />
+        <Route path="/trash" element={<TrashPage />} />
+
+        {/* Fallback  */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );
