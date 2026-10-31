@@ -9,7 +9,13 @@ const AuthPage = () => {
         <div
           className="relative size-full rounded-[26px] sm:rounded-4xl overflow-hidden
         flex flex-col justify-between p-8 sm:p-12 text-white bg-black"
-        ></div>
+        >
+          <img
+            src="/login_ribbon.png"
+            alt="Fluid Neon Art"
+            className="absolute inset-0 size-full object-cover object-center"
+          />
+        </div>
       </div>
 
       {/* Form  */}
