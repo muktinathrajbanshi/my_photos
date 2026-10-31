@@ -35,7 +35,13 @@ const AuthPage = () => {
       <div
         className="lg:col-span-6 bg-white px-8 py-10 sm:px-12 sm:py-14 lg:px-16 lg:py-16
       flex flex-col justify-between"
-      ></div>
+      >
+        <img
+          src="/logo.png"
+          alt="App Logo"
+          className="h-16 xl:h-20 xl:mt-10 w-auto object-contain"
+        />
+      </div>
     </div>
   );
 };
