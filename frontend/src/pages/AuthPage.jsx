@@ -41,6 +41,12 @@ const AuthPage = () => {
           alt="App Logo"
           className="h-16 xl:h-20 xl:mt-10 w-auto object-contain"
         />
+
+        <div className="max-w-md w-full mx-auto my-auto py-2">
+          <div>
+            <h1></h1>
+          </div>
+        </div>
       </div>
     </div>
   );
