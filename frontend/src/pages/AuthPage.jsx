@@ -21,7 +21,12 @@ const AuthPage = () => {
             <h2 className="text-4xl sm:text-5xl lg:text-5xl font-medium">
               MY Photos
             </h2>
-            <p>Safely store and organize your HD photos and videos</p>
+            <p
+              className="text-xs sm:text-sm text-white/80 leading-relaxed
+            max-w-sm mt-4 sm:mt-5"
+            >
+              Safely store and organize your HD photos and videos
+            </p>
           </div>
         </div>
       </div>
