@@ -6,7 +6,10 @@ const AuthPage = () => {
     >
       {/* Hero  */}
       <div className="relative lg:col-span-6 p-2 sm:p-3 flex flex-col">
-        <div></div>
+        <div
+          className="relative size-full rounded-[26px] sm:rounded-4xl overflow-hidden
+        flex flex-col justify-between p-8 sm:p-12 text-white bg-black"
+        ></div>
       </div>
 
       {/* Form  */}
