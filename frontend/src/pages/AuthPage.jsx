@@ -18,9 +18,10 @@ const AuthPage = () => {
 
           <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/60 to-black" />
           <div className="relative z-10 mt-auto pt-24 sm:pt-32">
-            <h2>MY Photos</h2>
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl font-medium">
+              MY Photos
+            </h2>
             <p>Safely store and organize your HD photos and videos</p>
-            <p></p>
           </div>
         </div>
       </div>
