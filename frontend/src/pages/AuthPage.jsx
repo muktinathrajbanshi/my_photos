@@ -15,6 +15,8 @@ const AuthPage = () => {
             alt="Fluid Neon Art"
             className="absolute inset-0 size-full object-cover object-center"
           />
+
+          <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/60 to-black" />
         </div>
       </div>
 
