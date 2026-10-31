@@ -17,6 +17,11 @@ const AuthPage = () => {
           />
 
           <div className="absolute inset-0 bg-linear-to-b from-black/30 via-black/60 to-black" />
+          <div>
+            <h2>MY Photos</h2>
+            <p>Safely store and organize your HD photos and videos</p>
+            <p></p>
+          </div>
         </div>
       </div>
 
