@@ -56,10 +56,15 @@ const AuthPage = () => {
         />
 
         <div className="max-w-md w-full mx-auto my-auto py-2">
-          <div>
-            <h1>{isLogin ? "Welcome Back" : "Create Account"}</h1>
+          <div className="text-center mb-8">
+            <h1
+              className="text-3xl sm:text-4xl font-serif text-slate-900
+            font-normal tracking-tight"
+            >
+              {isLogin ? "Welcome Back" : "Create Account"}
+            </h1>
 
-            <p>
+            <p className="text-xs sm:text-sm text-slate-500 mt-2">
               {isLogin
                 ? "Enter your email and password to access your photo library"
                 : "Join My photos to organize your albums"}
