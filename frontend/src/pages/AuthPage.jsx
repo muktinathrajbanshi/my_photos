@@ -1,12 +1,26 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Input = ({label, value, placeholder, type = "text", onChange, required = true}) => (
+const Input = ({
+  label,
+  value,
+  placeholder,
+  type = "text",
+  onChange,
+  required = true,
+}) => (
   <div>
     <label>{label}</label>
-    <input type={type} value={value} onChange={(e) => onchange(e.target.value)} placeholder={placeholder} />
+    <input
+      type={type}
+      value={value}
+      onChange={(e) => onchange(e.target.value)}
+      placeholder={placeholder}
+      required={required}
+      className="auth-input"
+    />
   </div>
-)
+);
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -88,7 +102,7 @@ const AuthPage = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            {!isLogin && }
+            {!isLogin && <Input />}
           </form>
         </div>
       </div>
