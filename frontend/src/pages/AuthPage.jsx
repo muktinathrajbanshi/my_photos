@@ -113,6 +113,15 @@ const AuthPage = () => {
                 onchange={(v) => update("name", v)}
               />
             )}
+
+            <Input
+              key="email"
+              label="Email"
+              type="email"
+              value={form.email}
+              placeholder="Enter your email"
+              onchange={(v) => update("email", v)}
+            />
           </form>
         </div>
       </div>
