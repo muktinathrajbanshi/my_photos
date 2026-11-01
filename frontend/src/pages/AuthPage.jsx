@@ -36,6 +36,8 @@ const AuthPage = () => {
 
   const navigate = useNavigate();
 
+  const update = (key, value) => setForm((prev) => ({...prev, [key]: value}))
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     navigate("/");
@@ -108,6 +110,7 @@ const AuthPage = () => {
                 label="Full Name"
                 value={form.name}
                 placeholder="Enter your name"
+                onchange={(v) => }
               />
             )}
           </form>
