@@ -1,4 +1,17 @@
+import { useState } from "react";
+
 const AuthPage = () => {
+  const [isLogin, setIsLogin] = useState(true);
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    password: "",
+    rememberMe: true,
+  });
+
   return (
     <div
       className="w-full bg-white h-screen rounded-[30px] sm:rounded-[38px] overflow-hidden
