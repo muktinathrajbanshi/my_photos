@@ -102,7 +102,14 @@ const AuthPage = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            {!isLogin && <Input />}
+            {!isLogin && (
+              <Input
+                key="name"
+                label="Full Name"
+                value={form.name}
+                placeholder="Enter your name"
+              />
+            )}
           </form>
         </div>
       </div>
