@@ -23,7 +23,7 @@ const Input = ({
 );
 
 const AuthPage = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -36,7 +36,7 @@ const AuthPage = () => {
 
   const navigate = useNavigate();
 
-  const update = (key, value) => setForm((prev) => ({...prev, [key]: value}))
+  const update = (key, value) => setForm((prev) => ({ ...prev, [key]: value }));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -110,7 +110,7 @@ const AuthPage = () => {
                 label="Full Name"
                 value={form.name}
                 placeholder="Enter your name"
-                onchange={(v) => }
+                onchange={(v) => update("name", v)}
               />
             )}
           </form>
