@@ -2,7 +2,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Input = ({label, value, placeholder, type = "text", onChange, required = true}) => (
-
+  <div>
+    <label>{label}</label>
+    <input type={type} value={value} onChange={(e) => onchange(e.target.value)} placeholder={placeholder} />
+  </div>
 )
 
 const AuthPage = () => {
