@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const Input = ({label, value, placeholder, type = "text", onChange, required = true}) => (
+
+)
+
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
@@ -80,7 +84,9 @@ const AuthPage = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4"></form>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {!isLogin && }
+          </form>
         </div>
       </div>
     </div>
