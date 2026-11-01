@@ -57,7 +57,13 @@ const AuthPage = () => {
 
         <div className="max-w-md w-full mx-auto my-auto py-2">
           <div>
-            <h1></h1>
+            <h1>{isLogin ? "Welcome Back" : "Create Account"}</h1>
+
+            <p>
+              {isLogin
+                ? "Enter your email and password to access your photo library"
+                : "Join My photos to organize your albums"}
+            </p>
           </div>
         </div>
       </div>
