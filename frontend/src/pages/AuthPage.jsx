@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -11,6 +12,13 @@ const AuthPage = () => {
     password: "",
     rememberMe: true,
   });
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    navigate("/");
+  };
 
   return (
     <div
@@ -56,6 +64,7 @@ const AuthPage = () => {
         />
 
         <div className="max-w-md w-full mx-auto my-auto py-2">
+          {/* Heading  */}
           <div className="text-center mb-8">
             <h1
               className="text-3xl sm:text-4xl font-serif text-slate-900
@@ -70,6 +79,8 @@ const AuthPage = () => {
                 : "Join My photos to organize your albums"}
             </p>
           </div>
+
+          <form onSubmit={handleSubmit} className="space-y-4"></form>
         </div>
       </div>
     </div>
