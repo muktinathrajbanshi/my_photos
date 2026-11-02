@@ -156,7 +156,11 @@ const AuthPage = () => {
 
             <div className="flex items-center justify-between text-xs pt-0.5">
               <label className="flex items-center gap-2 cursor-pointer select-none">
-                <input type="text" />
+                <input
+                  type="checkbox"
+                  checked={form.rememberMe}
+                  onChange={(e) => update("rememberMe", e.target.checked)}
+                />
               </label>
             </div>
           </form>
