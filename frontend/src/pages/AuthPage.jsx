@@ -24,7 +24,7 @@ const Input = ({
 );
 
 const AuthPage = () => {
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -181,6 +181,10 @@ const AuthPage = () => {
               {loading ? <p>loading</p> : isLogin ? "Sign In" : "Sign Up"}
             </button>
           </form>
+        </div>
+        <div className="mt-8 text-xs sm:text-sm text-center text-slate-600">
+          {isLogin ? "Don't have an account?" : "Already have an account? "}
+          <button></button>
         </div>
       </div>
     </div>
