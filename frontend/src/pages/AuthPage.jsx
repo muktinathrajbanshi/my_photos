@@ -172,6 +172,14 @@ const AuthPage = () => {
                 Forgot Password
               </button>
             </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="auth-btn-primary"
+            >
+              {loading ? <p>loading</p> : isLogin ? "Sign In" : "Sign Up"}
+            </button>
           </form>
         </div>
       </div>
