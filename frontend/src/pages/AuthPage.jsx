@@ -130,7 +130,14 @@ const AuthPage = () => {
               </label>
 
               <div className="relative">
-                <input type={showPassword ? "text" : "password"} />
+                <input
+                  type={showPassword ? "text" : "password"}
+                  value={form.password}
+                  onChange={(e) => update("password", e.target.value)}
+                  placeholder="Enter your password"
+                  required
+                  className="auth-input pr-11"
+                />
               </div>
             </div>
           </form>
