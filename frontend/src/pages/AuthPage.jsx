@@ -138,6 +138,12 @@ const AuthPage = () => {
                   required
                   className="auth-input pr-11"
                 />
+
+                <button
+                  type="button"
+                  onClick={() => setShowPassword((v) => !v)}
+                  className="absolute right-3.5 top-3.5 text-slate-400 hover:text-slate-600 transition cursor-pointer"
+                ></button>
               </div>
             </div>
           </form>
