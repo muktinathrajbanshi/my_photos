@@ -160,8 +160,17 @@ const AuthPage = () => {
                   type="checkbox"
                   checked={form.rememberMe}
                   onChange={(e) => update("rememberMe", e.target.checked)}
+                  className="size-4 rounded border-slate-300 accent-slate-900"
                 />
+                <span className="text-slate-600">Remember me</span>
               </label>
+              <button
+                type="button"
+                className="text-slate-700 hover:text-slate-950 hover:underline
+              transition cursor-pointer"
+              >
+                Forgot Password
+              </button>
             </div>
           </form>
         </div>
