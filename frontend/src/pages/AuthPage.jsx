@@ -153,6 +153,12 @@ const AuthPage = () => {
                 </button>
               </div>
             </div>
+
+            <div className="flex items-center justify-between text-xs pt-0.5">
+              <label className="flex items-center gap-2 cursor-pointer select-none">
+                <input type="text" />
+              </label>
+            </div>
           </form>
         </div>
       </div>
