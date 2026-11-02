@@ -122,6 +122,13 @@ const AuthPage = () => {
               placeholder="Enter your email"
               onchange={(v) => update("email", v)}
             />
+
+            {/* Password  */}
+            <div>
+              <label className="block text-xs sm:text-sm font-medium text-slate-700 mb-1.5">
+                Password
+              </label>
+            </div>
           </form>
         </div>
       </div>
