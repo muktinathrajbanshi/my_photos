@@ -128,6 +128,10 @@ const AuthPage = () => {
               <label className="block text-xs sm:text-sm font-medium text-slate-700 mb-1.5">
                 Password
               </label>
+
+              <div className="relative">
+                <input type={showPassword ? "text" : "password"} />
+              </div>
             </div>
           </form>
         </div>
