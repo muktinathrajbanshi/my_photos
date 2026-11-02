@@ -184,7 +184,13 @@ const AuthPage = () => {
         </div>
         <div className="mt-8 text-xs sm:text-sm text-center text-slate-600">
           {isLogin ? "Don't have an account?" : "Already have an account? "}
-          <button></button>
+          <button
+            type="button"
+            onClick={() => setIsLogin((prev) => !prev)}
+            className="font-medium text-slate-900 hover:underline cursor-pointer"
+          >
+            {isLogin ? "Sign Up" : "Sign In"}
+          </button>
         </div>
       </div>
     </div>
