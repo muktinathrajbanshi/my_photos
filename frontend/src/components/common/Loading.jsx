@@ -25,7 +25,11 @@ const Loading = ({
   if (fullScreen) {
     <div
       className={`min-h-screen flex items-center justify-center bg-slate-50 ${className}`}
-    ></div>;
+    >
+      <Loader2Icon
+        className={`${sizeClass} animate-spin ${className || "text-current"}`}
+      />
+    </div>;
   }
 
   return <div></div>;
