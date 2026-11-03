@@ -1,7 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import { useState } from "react";
 
 const AppLayout = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isUploadOpen, setIsUploadOpen] = useState(false);
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
+
   return (
     <div>
       <Navbar />
