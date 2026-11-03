@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { EyeOff, Eye } from "lucide-react";
+import Loading from "../components/common/Loading";
 
 const Input = ({
   label,
@@ -26,7 +27,7 @@ const Input = ({
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const [form, setForm] = useState({
     name: "",
@@ -178,7 +179,13 @@ const AuthPage = () => {
               disabled={loading}
               className="auth-btn-primary"
             >
-              {loading ? <p>loading</p> : isLogin ? "Sign In" : "Sign Up"}
+              {loading ? (
+                <Loading inline size="xs" />
+              ) : isLogin ? (
+                "Sign In"
+              ) : (
+                "Sign Up"
+              )}
             </button>
           </form>
         </div>
