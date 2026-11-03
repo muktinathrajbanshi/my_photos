@@ -19,7 +19,8 @@ const Navbar = () => {
       {/* Center Search Bar  */}
       <div className="flex-1 max-w-2xl relative">
         <div className="navbar-search-wrapper">
-          <SearchIcon />
+          <SearchIcon className="size-4 text-slate-500 shrink-0 mr-2 sm:mr-3" />
+          <input type="text" />
         </div>
       </div>
 
