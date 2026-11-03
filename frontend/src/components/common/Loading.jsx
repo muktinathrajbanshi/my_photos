@@ -23,16 +23,24 @@ const Loading = ({
   }
 
   if (fullScreen) {
-    <div
-      className={`min-h-screen flex items-center justify-center bg-slate-50 ${className}`}
-    >
-      <Loader2Icon
-        className={`${sizeClass} animate-spin ${className || "text-current"}`}
-      />
-    </div>;
+    return (
+      <div
+        className={`min-h-screen flex items-center justify-center bg-slate-50 ${className}`}
+      >
+        <Loader2Icon
+          className={`${sizeClass} animate-spin animate-spin text-red-600`}
+        />
+      </div>
+    );
   }
 
-  return <div></div>;
+  return (
+    <div className={`flex items-center justify-center ${className || "py-24"}`}>
+      <Loader2Icon
+        className={`${sizeClass} animate-spin animate-spin text-red-600`}
+      />
+    </div>
+  );
 };
 
 export default Loading;
