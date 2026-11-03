@@ -1,4 +1,4 @@
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, SearchIcon } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -15,6 +15,16 @@ const Navbar = () => {
         <img src="/logo.png" alt="logo" className="size-8" />
         <h1 className="navbar-brand-text">MY PHOTOS</h1>
       </div>
+
+      {/* Center Search Bar  */}
+      <div className="flex-1 max-w-2xl relative">
+        <div className="navbar-search-wrapper">
+          <SearchIcon />
+        </div>
+      </div>
+
+      {/* Right Action Icons: Upload & Profile  */}
+      <div></div>
     </header>
   );
 };
