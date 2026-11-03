@@ -1,6 +1,11 @@
 import { MenuIcon, SearchIcon } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({
+  searchQuery,
+  onSearchChange,
+  onUploadClick,
+  onToggleSidebar,
+}) => {
   return (
     <header className="navbar-header">
       {/* Left brand and mobile hamburger  */}
@@ -24,6 +29,8 @@ const Navbar = () => {
             type="text"
             placeholder="Search photos, videos..."
             className="navbar-search-input"
+            value={searchQuery}
+            onChange={(e) => onSearchChange(e.target.value)}
           />
         </div>
       </div>
