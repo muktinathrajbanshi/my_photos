@@ -1,9 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const AppLayout = () => {
   return (
     <div>
-      <p>navbar</p>
+      <Navbar />
       <p>sidebar</p>
 
       <main className="app-main-content">
