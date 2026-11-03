@@ -9,7 +9,12 @@ const AppLayout = () => {
 
   return (
     <div>
-      <Navbar searchQuery={searchQuery} />
+      <Navbar
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        onUploadClick={() => setIsUploadOpen(true)}
+        onToggleSidebar={() => setIsMobileSidebarOpen((prev) => !prev)}
+      />
       <p>sidebar</p>
 
       <main className="app-main-content">
