@@ -9,7 +9,7 @@ const AppLayout = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar searchQuery={searchQuery} />
       <p>sidebar</p>
 
       <main className="app-main-content">
