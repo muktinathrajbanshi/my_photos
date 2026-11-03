@@ -20,7 +20,11 @@ const Navbar = () => {
       <div className="flex-1 max-w-2xl relative">
         <div className="navbar-search-wrapper">
           <SearchIcon className="size-4 text-slate-500 shrink-0 mr-2 sm:mr-3" />
-          <input type="text" />
+          <input
+            type="text"
+            placeholder="Search photos, videos..."
+            className="navbar-search-input"
+          />
         </div>
       </div>
 
