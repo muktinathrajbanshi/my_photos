@@ -12,6 +12,8 @@ const Navbar = () => {
         >
           <MenuIcon className="size-5" />
         </button>
+        <img src="/logo.png" alt="logo" className="size-8" />
+        <h1 className="navbar-brand-text">MY PHOTOS</h1>
       </div>
     </header>
   );
