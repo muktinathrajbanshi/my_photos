@@ -5,7 +5,11 @@ const Navbar = () => {
     <header className="navbar-header">
       {/* Left brand and mobile hamburger  */}
       <div className="navbar-brand">
-        <button>
+        <button
+          className="navbar-menu-btn"
+          title="Toggle menu"
+          aria-label="Toggle navigation menu"
+        >
           <MenuIcon className="size-5" />
         </button>
       </div>
