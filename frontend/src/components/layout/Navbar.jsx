@@ -5,7 +5,7 @@ import {
   UploadIcon,
   XIcon,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = ({
   searchQuery,
@@ -18,6 +18,17 @@ const Navbar = ({
   };
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownOpen(false);
+      }
+    };
+  }, []);
 
   return (
     <header className="navbar-header">
