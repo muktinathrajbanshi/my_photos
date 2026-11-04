@@ -1,4 +1,10 @@
-import { MenuIcon, SearchIcon, SparkleIcon, XIcon } from "lucide-react";
+import {
+  MenuIcon,
+  SearchIcon,
+  SparkleIcon,
+  UploadIcon,
+  XIcon,
+} from "lucide-react";
 
 const Navbar = ({
   searchQuery,
@@ -50,7 +56,10 @@ const Navbar = ({
 
       {/* Right Action Icons: Upload & Profile  */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-        <button></button>
+        <button>
+          <UploadIcon className="size-3.5" />
+          <span className="hidden sm:inline">Upload</span>
+        </button>
       </div>
     </header>
   );
