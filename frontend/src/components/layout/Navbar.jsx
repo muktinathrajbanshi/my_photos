@@ -32,7 +32,8 @@ const Navbar = ({
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
             {searchQuery ? (
-              <button onClick={() => onSearchChange("")}>
+              <button onClick={() => onSearchChange("")}
+              className="hover:bg-slate-200 rounded-full text-slate-400 hover:text-slate-600 transition p-0.5">
                 <XIcon className="size-3.5 sm:size-4 text-slate-800" />
               </button>
             ) : (
