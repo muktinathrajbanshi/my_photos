@@ -1,4 +1,4 @@
-import { MenuIcon, SearchIcon, XIcon } from "lucide-react";
+import { MenuIcon, SearchIcon, SparkleIcon, XIcon } from "lucide-react";
 
 const Navbar = ({
   searchQuery,
@@ -40,7 +40,10 @@ const Navbar = ({
               <XIcon className="size-3.5 sm:size-4 text-slate-800" />
             </button>
           ) : (
-            <div></div>
+            <div>
+              AI-Powered Search{" "}
+              <SparkleIcon className="size-3.5 animate-spin text-slate-600 shrink-0" />
+            </div>
           )}
         </div>
       </div>
