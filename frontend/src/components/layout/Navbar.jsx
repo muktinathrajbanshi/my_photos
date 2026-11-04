@@ -85,6 +85,11 @@ const Navbar = ({
           <UploadIcon className="size-3.5" />
           <span className="hidden sm:inline">Upload</span>
         </button>
+
+        {/* User profile menu  */}
+        <div className="relative" ref={dropdownRef}>
+          <button>{user?.name?.charAt(0) || "U"}</button>
+        </div>
       </div>
     </header>
   );
