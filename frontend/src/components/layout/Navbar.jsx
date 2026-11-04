@@ -56,7 +56,11 @@ const Navbar = ({
 
       {/* Right Action Icons: Upload & Profile  */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-        <button>
+        <button
+          onClick={onUploadClick}
+          className="navbar-upload-btn"
+          title="Upload photos & videos"
+        >
           <UploadIcon className="size-3.5" />
           <span className="hidden sm:inline">Upload</span>
         </button>
