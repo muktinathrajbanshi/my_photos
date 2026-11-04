@@ -5,6 +5,7 @@ import {
   UploadIcon,
   XIcon,
 } from "lucide-react";
+import { useState } from "react";
 
 const Navbar = ({
   searchQuery,
@@ -12,6 +13,12 @@ const Navbar = ({
   onUploadClick,
   onToggleSidebar,
 }) => {
+  const { user } = {
+    user: { name: "Muktinath Raj", email: "muktinat@example.com" },
+  };
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <header className="navbar-header">
       {/* Left brand and mobile hamburger  */}
