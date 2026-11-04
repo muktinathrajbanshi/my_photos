@@ -49,7 +49,9 @@ const Navbar = ({
       </div>
 
       {/* Right Action Icons: Upload & Profile  */}
-      <div></div>
+      <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+        <button></button>
+      </div>
     </header>
   );
 };
