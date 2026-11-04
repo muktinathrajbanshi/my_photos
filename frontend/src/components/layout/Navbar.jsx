@@ -88,7 +88,9 @@ const Navbar = ({
 
         {/* User profile menu  */}
         <div className="relative" ref={dropdownRef}>
-          <button>{user?.name?.charAt(0) || "U"}</button>
+          <button onClick={() => setDropdownOpen(!dropdownOpen)}>
+            {user?.name?.charAt(0) || "U"}
+          </button>
         </div>
       </div>
     </header>
