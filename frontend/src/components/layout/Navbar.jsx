@@ -31,6 +31,15 @@ const Navbar = ({
             className="navbar-search-input"
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
+            {searchQuery ? (
+              <button onClick={() => onSearchChange("")}>
+                <XIcon className="size-3.5 sm:size-4 text-slate-800" />
+              </button>
+            ) : (
+              <div>
+
+              </div>
+            )}
           />
         </div>
       </div>
