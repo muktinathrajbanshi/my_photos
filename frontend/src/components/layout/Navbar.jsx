@@ -98,7 +98,12 @@ const Navbar = ({
 
           {dropdownOpen && (
             <div className="navbar-dropdown">
-              <div className="px-4 py-2 border-b border-slate-100"></div>
+              <div className="px-4 py-2 border-b border-slate-100">
+                <p className="font-medium text-slate-800 text-sm truncate">
+                  {user?.name}
+                </p>
+                <p>{user?.email}</p>
+              </div>
               <div></div>
             </div>
           )}
