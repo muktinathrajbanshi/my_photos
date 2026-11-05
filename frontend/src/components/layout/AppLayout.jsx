@@ -42,8 +42,11 @@ const AppLayout = () => {
       />
 
       <div className="flex-1 flex overflow-hidden min-h-0 relative">
-        <Sidebar />
-
+        <Sidebar
+          onCreateAlbumClick={() => openCreateAlbum()}
+          onUploadClick={() => setIsUploadOpen(true)}
+        />
+        isMobileOpen={isMobileSidebarOpen}
         <main className="app-main-content">
           <Outlet />
         </main>
