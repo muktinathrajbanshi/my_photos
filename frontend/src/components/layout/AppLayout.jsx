@@ -45,8 +45,9 @@ const AppLayout = () => {
         <Sidebar
           onCreateAlbumClick={() => openCreateAlbum()}
           onUploadClick={() => setIsUploadOpen(true)}
+          isMobileOpen={isMobileSidebarOpen}
+          onCloseMobile={() => setIsMobileSidebarOpen(false)}
         />
-        isMobileOpen={isMobileSidebarOpen}
         <main className="app-main-content">
           <Outlet />
         </main>
