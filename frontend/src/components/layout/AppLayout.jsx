@@ -15,7 +15,9 @@ const AppLayout = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setIsMobilesSidebarOpen(false);
+  }, [location.pathname]);
 
   const handleUploadSuccess = () => {
     window.dispatchEvent(new CustomEvent("media-uploaded"));
