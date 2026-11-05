@@ -1,6 +1,6 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Sidebar } from "lucide-react";
 
 const AppLayout = () => {
@@ -15,8 +15,15 @@ const AppLayout = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(() => {}, []);
+
+  const handleUploadSuccess = () => {
+    window.dispatchEvent(new CustomEvent("media-uploaded"));
+  };
+
   const handleAlbumCreated = () => {
     setCreateAlbumState({ isOpen: false, photoIds: [] });
+    navigate(`/albums/${album._id}`);
   };
 
   const openCreateAlbum = (photoIds = []) => {
