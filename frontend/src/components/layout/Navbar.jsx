@@ -95,6 +95,13 @@ const Navbar = ({
           >
             {user?.name?.charAt(0) || "U"}
           </button>
+
+          {dropdownOpen && (
+            <div className="navbar-dropdown">
+              <div className="px-4 py-2 border-b border-slate-100"></div>
+              <div></div>
+            </div>
+          )}
         </div>
       </div>
     </header>
