@@ -1,4 +1,5 @@
 import {
+  LogOutIcon,
   MenuIcon,
   SearchIcon,
   SparkleIcon,
@@ -28,10 +29,9 @@ const Navbar = ({
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         setDropdownOpen(false);
       }
-      document.addEventListener("mousedown", handleClickOutside);
-      return () =>
-        document.removeEventListener("mousedown", handleClickOutside);
     };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -104,7 +104,12 @@ const Navbar = ({
                 </p>
                 <p className="text-xs text-slate-500 truncate">{user?.email}</p>
               </div>
-              <div></div>
+              <div className="p-1">
+                <button>
+                  <LogOutIcon className="size-3.5" />
+                  Sign out
+                </button>
+              </div>
             </div>
           )}
         </div>
