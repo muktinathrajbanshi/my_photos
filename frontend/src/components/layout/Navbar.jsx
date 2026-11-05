@@ -108,6 +108,7 @@ const Navbar = ({
                 <button
                   onClick={() => {
                     setDropdownOpen(false);
+                    navigate("/login");
                   }}
                   className="navbar-logout-btn"
                 >
