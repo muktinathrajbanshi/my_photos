@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useState } from "react";
 import { Sidebar } from "lucide-react";
@@ -12,7 +12,12 @@ const AppLayout = () => {
     photoIds: [],
   });
 
-  const openCreateAlbum = (photoIds = []) => {};
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const openCreateAlbum = (photoIds = []) => {
+    setCreateAlbumState({});
+  };
 
   return (
     <div>
