@@ -105,7 +105,12 @@ const Navbar = ({
                 <p className="text-xs text-slate-500 truncate">{user?.email}</p>
               </div>
               <div className="p-1">
-                <button>
+                <button
+                  onClick={() => {
+                    setDropdownOpen(false);
+                  }}
+                  className="navbar-logout-btn"
+                >
                   <LogOutIcon className="size-3.5" />
                   Sign out
                 </button>
