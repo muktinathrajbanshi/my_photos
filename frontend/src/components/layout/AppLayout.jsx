@@ -15,8 +15,12 @@ const AppLayout = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const handleAlbumCreated = () => {
+    setCreateAlbumState({ isOpen: false, photoIds: [] });
+  };
+
   const openCreateAlbum = (photoIds = []) => {
-    setCreateAlbumState({});
+    setCreateAlbumState({ isOpen: true, photoIds });
   };
 
   return (
