@@ -102,7 +102,7 @@ const Navbar = ({
                 <p className="font-medium text-slate-800 text-sm truncate">
                   {user?.name}
                 </p>
-                <p>{user?.email}</p>
+                <p className="text-xs text-slate-500 truncate">{user?.email}</p>
               </div>
               <div></div>
             </div>
