@@ -10,6 +10,14 @@ const Sidebar = ({
       {isMobileOpen && (
         <div className="sidebar-backdrop" onClick={onCloseMobile} />
       )}
+
+      <aside>
+        {/* header  */}
+
+        {/* Main Navigation  */}
+
+        {/* Storage Widget  */}
+      </aside>
     </>
   );
 };
