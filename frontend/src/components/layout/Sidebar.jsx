@@ -11,7 +11,9 @@ const Sidebar = ({
         <div className="sidebar-backdrop" onClick={onCloseMobile} />
       )}
 
-      <aside>
+      <aside
+        className={`sidebar-container ${isMobileOpen ? "sidebar-mobile-open" : "sidebar-mobile-closed"}`}
+      >
         {/* header  */}
 
         {/* Main Navigation  */}
