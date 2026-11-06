@@ -16,7 +16,7 @@ const Sidebar = ({
       >
         {/* header  */}
         <div className="sidebar-mobile-header">
-          <div>
+          <div className="flex items-center gap-2.5">
             <img src="/logo.png" alt="logo" className="size-7" />
             <span className="font-heading font-semibold text-slate-800 tracking-tight text-base">
               MY PHOTOS

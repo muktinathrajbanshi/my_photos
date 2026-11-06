@@ -1,7 +1,7 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
-import { Sidebar } from "lucide-react";
+import Sidebar from "./Sidebar";
 
 const AppLayout = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,7 +16,7 @@ const AppLayout = () => {
   const location = useLocation();
 
   useEffect(() => {
-    setIsMobilesSidebarOpen(false);
+    setIsMobileSidebarOpen(false);
   }, [location.pathname]);
 
   const handleUploadSuccess = () => {
