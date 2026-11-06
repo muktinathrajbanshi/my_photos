@@ -18,6 +18,9 @@ const Sidebar = ({
         <div className="sidebar-mobile-header">
           <div>
             <img src="/logo.png" alt="logo" className="size-7" />
+            <span className="font-heading font-semibold text-slate-800 tracking-tight text-base">
+              MY PHOTOS
+            </span>
           </div>
         </div>
 
