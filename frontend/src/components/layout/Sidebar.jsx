@@ -1,3 +1,5 @@
+import { XIcon } from "lucide-react";
+
 const Sidebar = ({
   onCreateAlbumClick,
   onUploadClick,
@@ -22,9 +24,18 @@ const Sidebar = ({
               MY PHOTOS
             </span>
           </div>
+          <button className="sidebar-close-btn" onClick={onCloseMobile}>
+            <XIcon className="size-5" />
+          </button>
         </div>
 
         {/* Main Navigation  */}
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <button></button>
+          </div>
+          <nav></nav>
+        </div>
 
         {/* Storage Widget  */}
       </aside>
