@@ -41,7 +41,10 @@ const Sidebar = ({
               <PlusIcon className="size-4" />
               <span>Upload Photos</span>
             </button>
-            <button>
+            <button
+              onClick={handleCreateAlbumClick}
+              className="sidebar-action-btn"
+            >
               <FolderHeartIcon className="size-4" />
               <span>Create Album</span>
             </button>
