@@ -1,4 +1,4 @@
-import { XIcon } from "lucide-react";
+import { PlusIcon, XIcon } from "lucide-react";
 
 const Sidebar = ({
   onCreateAlbumClick,
@@ -32,7 +32,10 @@ const Sidebar = ({
         {/* Main Navigation  */}
         <div className="space-y-6">
           <div className="space-y-2">
-            <button></button>
+            <button onClick={handleUploadClick} className="sidebar-action-btn">
+              <PlusIcon className="size-4" />
+              <span>Create Album</span>
+            </button>
           </div>
           <nav></nav>
         </div>
