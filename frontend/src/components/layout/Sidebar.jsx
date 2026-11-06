@@ -6,6 +6,11 @@ const Sidebar = ({
   isMobileOpen = false,
   onCloseMobile,
 }) => {
+  const handleUploadClick = () => {
+    onCloseMobile?.();
+    onUploadClick?.();
+  };
+
   return (
     <>
       {/* Mobile Backdrop  */}
@@ -34,7 +39,7 @@ const Sidebar = ({
           <div className="space-y-2">
             <button onClick={handleUploadClick} className="sidebar-action-btn">
               <PlusIcon className="size-4" />
-              <span>Create Album</span>
+              <span>Upload Photos</span>
             </button>
             <button>
               <FolderHeartIcon className="size-4" />
