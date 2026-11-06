@@ -11,6 +11,11 @@ const Sidebar = ({
     onUploadClick?.();
   };
 
+  const handleCreateAlbumClick = () => {
+    onCloseMobile?.();
+    onCreateAlbumClick?.();
+  };
+
   return (
     <>
       {/* Mobile Backdrop  */}
