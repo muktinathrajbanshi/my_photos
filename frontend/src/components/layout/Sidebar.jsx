@@ -72,7 +72,15 @@ const Sidebar = ({
             {navLinks.map((item) => {
               const Icon = item.icon;
               return (
-                <NavLink key={item.to} to={item.to}>
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  end={item.to === "/"}
+                  onClick={() => onCloseMobile?.()}
+                  className={({ isActive }) =>
+                    `sidebar-nav-item ${isActive ? "sidebar-nav-item-active" : "sidebar-nav-item-inactive"}`
+                  }
+                >
                   <Icon className="size-5 shrink-0" />
                   <span>{item.label}</span>
                 </NavLink>
