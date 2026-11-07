@@ -15,6 +15,8 @@ const Sidebar = ({
   const navLinks = [
     { to: "/", label: "Photos & Videos", icon: ImageIcon },
     { to: "/favorites", label: "Favorites", icon: StarIcon },
+    { to: "/albums", label: "Albums", icon: FolderHeartIcon },
+    { to: "/trash", label: "Trash", icon: StarIcon },
   ];
 
   const handleUploadClick = () => {
