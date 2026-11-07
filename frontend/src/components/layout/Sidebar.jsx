@@ -6,7 +6,7 @@ import {
   Trash2Icon,
   XIcon,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { NavLink } from "react-router-dom";
 import { DUMMY_STATS } from "../../assets/assets";
@@ -22,6 +22,16 @@ const Sidebar = ({
   const fetchStats = async () => {
     setStats(DUMMY_STATS);
   };
+
+  useEffect(() => {
+    fetchStats();
+    const interval = setInterval(fetchStats, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const storageUsed = stats?.totalBytes
+    ? (stats.totalBytes / (1024 * 1024)).toFixed(1)
+    : "0.0";
 
   const navLinks = [
     { to: "/", label: "Photos & Videos", icon: ImageIcon },
