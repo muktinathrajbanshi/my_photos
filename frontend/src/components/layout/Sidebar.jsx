@@ -1,4 +1,10 @@
-import { FolderHeartIcon, PlusIcon, XIcon } from "lucide-react";
+import {
+  FolderHeartIcon,
+  ImageIcon,
+  PlusIcon,
+  StarIcon,
+  XIcon,
+} from "lucide-react";
 
 const Sidebar = ({
   onCreateAlbumClick,
@@ -6,7 +12,10 @@ const Sidebar = ({
   isMobileOpen = false,
   onCloseMobile,
 }) => {
-  const navLinks = [{ to: "/", label: "Photos & Videos" }];
+  const navLinks = [
+    { to: "/", label: "Photos & Videos", icon: ImageIcon },
+    { to: "/favorites", label: "Favorites", icon: StarIcon },
+  ];
 
   const handleUploadClick = () => {
     onCloseMobile?.();
