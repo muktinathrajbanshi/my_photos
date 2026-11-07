@@ -68,7 +68,12 @@ const Sidebar = ({
               <span>Create Album</span>
             </button>
           </div>
-          <nav className="space-y-1">{navLinks}</nav>
+          <nav className="space-y-1">
+            {navLinks.map((item) => {
+              const Icon = item.icon;
+              return <NavLink></NavLink>;
+            })}
+          </nav>
         </div>
 
         {/* Storage Widget  */}
