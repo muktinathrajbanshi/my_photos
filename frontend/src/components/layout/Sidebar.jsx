@@ -3,6 +3,7 @@ import {
   ImageIcon,
   PlusIcon,
   StarIcon,
+  Trash2Icon,
   XIcon,
 } from "lucide-react";
 
@@ -16,7 +17,7 @@ const Sidebar = ({
     { to: "/", label: "Photos & Videos", icon: ImageIcon },
     { to: "/favorites", label: "Favorites", icon: StarIcon },
     { to: "/albums", label: "Albums", icon: FolderHeartIcon },
-    { to: "/trash", label: "Trash", icon: StarIcon },
+    { to: "/trash", label: "Trash", icon: Trash2Icon },
   ];
 
   const handleUploadClick = () => {
@@ -67,7 +68,7 @@ const Sidebar = ({
               <span>Create Album</span>
             </button>
           </div>
-          <nav></nav>
+          <nav className="space-y-1">{navLinks}</nav>
         </div>
 
         {/* Storage Widget  */}
