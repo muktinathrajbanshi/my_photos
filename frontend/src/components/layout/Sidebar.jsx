@@ -6,6 +6,8 @@ const Sidebar = ({
   isMobileOpen = false,
   onCloseMobile,
 }) => {
+  const navLinks = [{ to: "/", label: "Photos & Videos" }];
+
   const handleUploadClick = () => {
     onCloseMobile?.();
     onUploadClick?.();
