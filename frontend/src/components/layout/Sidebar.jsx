@@ -6,8 +6,10 @@ import {
   Trash2Icon,
   XIcon,
 } from "lucide-react";
+import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
+import { DUMMY_STATS } from "../../assets/assets";
 
 const Sidebar = ({
   onCreateAlbumClick,
@@ -15,6 +17,12 @@ const Sidebar = ({
   isMobileOpen = false,
   onCloseMobile,
 }) => {
+  const [stats, setStats] = useState(null);
+
+  const fetchStats = async () => {
+    setStats(DUMMY_STATS);
+  };
+
   const navLinks = [
     { to: "/", label: "Photos & Videos", icon: ImageIcon },
     { to: "/favorites", label: "Favorites", icon: StarIcon },
