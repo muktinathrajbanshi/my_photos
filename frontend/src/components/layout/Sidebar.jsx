@@ -136,6 +136,7 @@ const Sidebar = ({
             <span>
               {stats?.mediaCount ?? stats?.photoCount ?? 0} media saved
             </span>
+            {stats?.videoCount ? <span>{stats.videoCount} videos</span> : null}
           </div>
         </div>
       </aside>
