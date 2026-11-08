@@ -126,6 +126,9 @@ const Sidebar = ({
             </span>
             <span className="font-medium text-slate-900">{storageUsed} MB</span>
           </div>
+          <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div className="sidebar-storage-bar" />
+          </div>
         </div>
       </aside>
     </>
