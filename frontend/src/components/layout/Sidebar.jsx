@@ -122,7 +122,9 @@ const Sidebar = ({
           <div className="flex items-center justify-between text-xs text-slate-600">
             <span>
               <HardDriveIcon className="size-4 text-red-500" />
+              Storage
             </span>
+            <span className="font-medium text-slate-900">{storageUsed} MB</span>
           </div>
         </div>
       </aside>
