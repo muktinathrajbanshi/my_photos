@@ -33,6 +33,8 @@ const Sidebar = ({
     ? (stats.totalBytes / (1024 * 1024)).toFixed(1)
     : "0.0";
 
+    const storagePercent = stats?.totalBytes ? Math.min(100, Math.max(3, Math.round((stats.totalBytes / (100 * 1024 * 1024)) * 100)))
+
   const navLinks = [
     { to: "/", label: "Photos & Videos", icon: ImageIcon },
     { to: "/favorites", label: "Favorites", icon: StarIcon },
