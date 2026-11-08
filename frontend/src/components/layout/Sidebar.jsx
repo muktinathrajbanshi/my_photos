@@ -132,6 +132,11 @@ const Sidebar = ({
               style={{ width: `${storagePercent}%` }}
             />
           </div>
+          <div className="flex justify-between items-center text-[11px] text-slate-400">
+            <span>
+              {stats?.mediaCount ?? stats?.photoCount ?? 0} media saved
+            </span>
+          </div>
         </div>
       </aside>
     </>
