@@ -33,7 +33,7 @@ const AppLayout = () => {
   };
 
   return (
-    <div>
+    <div className="h-screen flex flex-col bg-white overflow-hidden">
       <Navbar
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
