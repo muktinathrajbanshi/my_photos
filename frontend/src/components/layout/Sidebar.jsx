@@ -120,7 +120,7 @@ const Sidebar = ({
         {/* Storage Widget  */}
         <div className="sidebar-storage-card">
           <div className="flex items-center justify-between text-xs text-slate-600">
-            <span>
+            <span className="flex items-center gap-1.5 text-slate-700">
               <HardDriveIcon className="size-4 text-red-500" />
               Storage
             </span>
