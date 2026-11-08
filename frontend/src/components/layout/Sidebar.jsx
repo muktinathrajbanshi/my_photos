@@ -33,7 +33,12 @@ const Sidebar = ({
     ? (stats.totalBytes / (1024 * 1024)).toFixed(1)
     : "0.0";
 
-    const storagePercent = stats?.totalBytes ? Math.min(100, Math.max(3, Math.round((stats.totalBytes / (100 * 1024 * 1024)) * 100)))
+  const storagePercent = stats?.totalBytes
+    ? Math.min(
+        100,
+        Math.max(3, Math.round((stats.totalBytes / (100 * 1024 * 1024)) * 100)),
+      )
+    : 2;
 
   const navLinks = [
     { to: "/", label: "Photos & Videos", icon: ImageIcon },
@@ -112,6 +117,9 @@ const Sidebar = ({
         </div>
 
         {/* Storage Widget  */}
+        <div className="sidebar-storage-card">
+          <div className="flex items-center justify-between text-xs text-slate-600"></div>
+        </div>
       </aside>
     </>
   );
