@@ -1,5 +1,6 @@
 import {
   FolderHeartIcon,
+  HardDriveIcon,
   ImageIcon,
   PlusIcon,
   StarIcon,
@@ -118,7 +119,11 @@ const Sidebar = ({
 
         {/* Storage Widget  */}
         <div className="sidebar-storage-card">
-          <div className="flex items-center justify-between text-xs text-slate-600"></div>
+          <div className="flex items-center justify-between text-xs text-slate-600">
+            <span>
+              <HardDriveIcon className="size-4 text-red-500" />
+            </span>
+          </div>
         </div>
       </aside>
     </>
