@@ -1,4 +1,4 @@
-import { FolderPlusIcon } from "lucide-react";
+import { FolderPlusIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 
 const CreateAlbumModal = ({
@@ -28,11 +28,13 @@ const CreateAlbumModal = ({
     <div className="modal-backdrop">
       <div className="modal-box-md">
         <div className="modal-header">
-          <div>
+          <div className="flex items-center">
             <FolderPlusIcon className="size-5 text-red-600 mx-3" />
             <h3 className="font-medium text-slate-700 text-base">New Album</h3>
           </div>
-          <div></div>
+          <button>
+            <XIcon className="size-5 text-slate-400 hover:text-slate-600" />
+          </button>
         </div>
       </div>
     </div>
