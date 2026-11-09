@@ -67,7 +67,9 @@ const CreateAlbumModal = ({
           </div>
 
           {initialPhotoIds.length > 0 && (
-            <p>{initialPhotoIds.length} photo(s) will be added automatically</p>
+            <p className="text-xs text-orange-700">
+              {initialPhotoIds.length} photo(s) will be added automatically
+            </p>
           )}
         </form>
       </div>
