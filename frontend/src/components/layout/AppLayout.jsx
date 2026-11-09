@@ -57,6 +57,8 @@ const AppLayout = () => {
       <CreateAlbumModal
         isOpen={createAlbumState.isOpen}
         onClose={() => setCreateAlbumState({ isOpen: false, photoIds: [] })}
+        onAlbumCreated={handleAlbumCreated}
+        initialPhotoIds={createAlbumState.photoIds}
       />
     </div>
   );
