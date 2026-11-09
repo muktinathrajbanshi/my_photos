@@ -65,6 +65,10 @@ const CreateAlbumModal = ({
               className="form-input resize-none"
             />
           </div>
+
+          {initialPhotoIds.length > 0 && (
+            <p>{initialPhotoIds.length} photo(s) will be added automatically</p>
+          )}
         </form>
       </div>
     </div>
