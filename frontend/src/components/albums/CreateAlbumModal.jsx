@@ -36,6 +36,12 @@ const CreateAlbumModal = ({
             <XIcon className="size-5 text-slate-400 hover:text-slate-600" />
           </button>
         </div>
+
+        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+          <div>
+            <label className="block text-xs font-medium text-slate-700 tracking-wider mb-1.5"></label>
+          </div>
+        </form>
       </div>
     </div>
   );
