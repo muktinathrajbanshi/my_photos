@@ -30,7 +30,7 @@ const CreateAlbumModal = ({
         <div className="modal-header">
           <div>
             <FolderPlusIcon className="size-5 text-red-600 mx-3" />
-            <h3>New Album</h3>
+            <h3 className="font-medium text-slate-700 text-base">New Album</h3>
           </div>
           <div></div>
         </div>
