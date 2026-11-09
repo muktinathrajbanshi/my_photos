@@ -39,7 +39,14 @@ const CreateAlbumModal = ({
 
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
           <div>
-            <label className="block text-xs font-medium text-slate-700 tracking-wider mb-1.5"></label>
+            <label className="block text-xs font-medium text-slate-700 tracking-wider mb-1.5">
+              Album Title *
+            </label>
+            <input
+              type="text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
           </div>
         </form>
       </div>
