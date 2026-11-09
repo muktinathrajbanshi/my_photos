@@ -60,6 +60,8 @@ const CreateAlbumModal = ({
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+              placeholder="Add a short note about this album..."
+              rows={3}
             />
           </div>
         </form>
