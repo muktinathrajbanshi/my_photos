@@ -19,9 +19,17 @@ const CreateAlbumModal = ({
   const handleClose = () => {
     setTitle("");
     setDescription("");
+    setLoading(false);
+    onClose();
   };
 
-  return <div></div>;
+  return (
+    <div className="modal-backdrop">
+      <div className="modal-box-md">
+        <div></div>
+      </div>
+    </div>
+  );
 };
 
 export default CreateAlbumModal;
