@@ -7,6 +7,8 @@ const CreateAlbumModal = ({
   initialPhotoIds,
 }) => {
   const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [loading, setLoading] = useState(false);
 
   return <div></div>;
 };
