@@ -71,6 +71,15 @@ const CreateAlbumModal = ({
               {initialPhotoIds.length} photo(s) will be added automatically
             </p>
           )}
+          <div className="pt-2 flex items-center justify-end gap-2">
+            <button
+              type="button"
+              onClick={handleClose}
+              className="btn-secondary"
+            >
+              Cancel
+            </button>
+          </div>
         </form>
       </div>
     </div>
