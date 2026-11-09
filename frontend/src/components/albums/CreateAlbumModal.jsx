@@ -46,6 +46,10 @@ const CreateAlbumModal = ({
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
+              placeholder="e.g. Summer Vacation 2026"
+              autoFocus
+              required
+              className="form-input"
             />
           </div>
         </form>
