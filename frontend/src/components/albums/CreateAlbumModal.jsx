@@ -32,7 +32,7 @@ const CreateAlbumModal = ({
             <FolderPlusIcon className="size-5 text-red-600 mx-3" />
             <h3 className="font-medium text-slate-700 text-base">New Album</h3>
           </div>
-          <button>
+          <button className="p-1.5 cursor-pointer" onClick={handleClose}>
             <XIcon className="size-5 text-slate-400 hover:text-slate-600" />
           </button>
         </div>

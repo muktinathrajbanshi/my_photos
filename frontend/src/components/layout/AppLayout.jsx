@@ -2,6 +2,7 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
+import CreateAlbumModal from "../albums/CreateAlbumModal";
 
 const AppLayout = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -52,6 +53,8 @@ const AppLayout = () => {
           <Outlet />
         </main>
       </div>
+
+      <CreateAlbumModal />
     </div>
   );
 };
