@@ -52,6 +52,16 @@ const CreateAlbumModal = ({
               className="form-input"
             />
           </div>
+
+          <div>
+            <label className="block text-xs font-medium text-slate-700 tracking-wider mb-1.5">
+              Description
+            </label>
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
         </form>
       </div>
     </div>
