@@ -62,6 +62,7 @@ const CreateAlbumModal = ({
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Add a short note about this album..."
               rows={3}
+              className="form-input resize-none"
             />
           </div>
         </form>
