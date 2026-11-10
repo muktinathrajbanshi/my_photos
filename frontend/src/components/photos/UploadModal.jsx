@@ -11,7 +11,16 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
   return (
     <div className="modal-backdrop">
-      <div className="modal-box-lg"></div>
+      <div className="modal-box-lg">
+        {/* Header  */}
+        <div className="modal-header">
+          <div>
+            <h2>Upload to My Library</h2>
+          </div>
+        </div>
+
+        {/* Content  */}
+      </div>
     </div>
   );
 };
