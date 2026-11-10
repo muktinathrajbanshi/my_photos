@@ -1,4 +1,4 @@
-import { FolderPlusIcon, XIcon } from "lucide-react";
+import { FolderPlusIcon, XIcon, Loading } from "lucide-react";
 import { useState } from "react";
 
 const CreateAlbumModal = ({
@@ -78,6 +78,9 @@ const CreateAlbumModal = ({
               className="btn-secondary"
             >
               Cancel
+            </button>
+            <button type="submit" onClick={handleClose} className="btn-primary">
+              {loading ? <Loading inline size="xs" /> : "Create Album"}
             </button>
           </div>
         </form>
