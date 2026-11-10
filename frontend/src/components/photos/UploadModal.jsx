@@ -20,7 +20,12 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             <h2>Upload to My Library</h2>
             <p>Upload and organize your photos & videos</p>
           </div>
-          <button onClick={handleClose}>
+          <button
+            onClick={handleClose}
+            disabled={uploading}
+            className="p-2 hover:bg-slate-100 text-slate-400
+          hover:text-slate-600 rounded-full transition cursor-pointer"
+          >
             <X classNames="size-5" />
           </button>
         </div>
