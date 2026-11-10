@@ -16,6 +16,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
         <div className="modal-header">
           <div>
             <h2>Upload to My Library</h2>
+            <p>Upload and organize your photos & videos</p>
           </div>
         </div>
 
