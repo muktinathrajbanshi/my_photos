@@ -20,7 +20,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             <h2 className="text-lg font-medium text-slate-800">
               Upload to My Library
             </h2>
-            <p>Upload and organize your photos & videos</p>
+            <p className="text-xs text-slate-500">
+              Upload and organize your photos & videos
+            </p>
           </div>
           <button
             onClick={handleClose}
