@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
 import CreateAlbumModal from "../albums/CreateAlbumModal";
+import UploadModal from "../photos/UploadModal";
 
 const AppLayout = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -59,6 +60,11 @@ const AppLayout = () => {
         onClose={() => setCreateAlbumState({ isOpen: false, photoIds: [] })}
         onAlbumCreated={handleAlbumCreated}
         initialPhotoIds={createAlbumState.photoIds}
+      />
+
+      <UploadModal
+        isOpen={isUploadOpen}
+        onClose={() => setIsUploadOpen(false)}
       />
     </div>
   );
