@@ -9,7 +9,11 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
   if (!isOpen) return null;
 
-  return <div></div>;
+  return (
+    <div className="modal-backdrop">
+      <div className="modal-box-lg"></div>
+    </div>
+  );
 };
 
 export default UploadModal;
