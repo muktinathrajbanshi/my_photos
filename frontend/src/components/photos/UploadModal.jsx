@@ -50,7 +50,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
         <div className="p-6 overflow-y-auto space-y-4">
           {/* Drag and Drop Box  */}
           <div>
-            <h3>
+            <h3 className="font-medium text-slate-800 text-sm capitalize">
               Drag & Drop <span>photos & videos</span> here, or Browse
             </h3>
             <p>Supports PNG, JPG, WEBP, GIF, MP4, WEBM (up to 100MB each)</p>
