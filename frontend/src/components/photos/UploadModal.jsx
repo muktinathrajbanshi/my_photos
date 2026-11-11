@@ -12,7 +12,10 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
   if (!isOpen) return null;
 
   const handleClose = () => {
-    previews.forEach((p) => URL.prevodeObjectURL(p.url));
+    previews.forEach((p) => URL.revokeObjectURL(p.url));
+    setSelectedFiles([]);
+    setPreviews([]);
+    setUploading(false);
   };
 
   return (
