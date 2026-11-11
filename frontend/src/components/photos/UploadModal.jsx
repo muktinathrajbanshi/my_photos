@@ -54,6 +54,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
               Drag & Drop <span>photos & videos</span> here, or Browse
             </h3>
             <p>Supports PNG, JPG, WEBP, GIF, MP4, WEBM (up to 100MB each)</p>
+            <input type="file" />
           </div>
 
           {/* Preview Grid  */}
