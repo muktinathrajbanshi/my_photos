@@ -11,6 +11,10 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
   if (!isOpen) return null;
 
+  const handleClose = () => {
+    previews.forEach((p) => URL.prevodeObjectURL(p.url));
+  };
+
   return (
     <div className="modal-backdrop">
       <div className="modal-box-lg">
