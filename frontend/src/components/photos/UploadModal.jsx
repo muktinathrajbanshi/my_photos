@@ -49,9 +49,17 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
         <div className="p-6 overflow-y-auto space-y-4">
           {/* Drag and Drop Box  */}
+          <div>
+            <h3>
+              Drag & Drop <span>photos & videos</span>
+            </h3>
+          </div>
 
           {/* Preview Grid  */}
         </div>
+
+        {/* Footer  */}
+        <div></div>
       </div>
     </div>
   );
