@@ -65,6 +65,9 @@ const AppLayout = () => {
       <UploadModal
         isOpen={isUploadOpen}
         onClose={() => setIsUploadOpen(false)}
+        onUploadSuccess={() => {
+          handleUploadSuccess;
+        }}
       />
     </div>
   );
