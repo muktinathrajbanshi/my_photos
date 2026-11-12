@@ -57,7 +57,13 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             <p className="text-xs text-slate-400 mt-1">
               Supports PNG, JPG, WEBP, GIF, MP4, WEBM (up to 100MB each)
             </p>
-            <input type="file" className="hidden" ref={fileInputRef} />
+            <input
+              type="file"
+              className="hidden"
+              ref={fileInputRef}
+              multiple
+              accept="image/*,video/*"
+            />
           </div>
 
           {/* Preview Grid  */}
