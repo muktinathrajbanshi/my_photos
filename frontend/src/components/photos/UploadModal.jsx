@@ -78,7 +78,13 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
         <div className="p-6 overflow-y-auto space-y-4">
           {/* Drag and Drop Box  */}
-          <div>
+          <div
+            onDragOver={}
+            onDragLeave={}
+            onDrop={}
+            onClick={}
+            className={`upload-dropzone`}
+          >
             <h3 className="font-medium text-slate-800 text-sm capitalize">
               Drag & Drop <span className="text-red-600">photos & videos</span>{" "}
               here, or Browse
