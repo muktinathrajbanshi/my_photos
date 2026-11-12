@@ -27,7 +27,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
     const newPreviews = validFiles.map(() => ({
       url: URL.createObjectURL(file),
       isVideo: file.type.startsWith("video/"),
+      name: file.name,
     }));
+    setPreviews((prev) => [...prev, ...newPreviews]);
   };
 
   const handleUpload = async () => {
