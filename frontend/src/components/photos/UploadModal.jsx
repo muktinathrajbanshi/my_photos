@@ -37,6 +37,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
       URL.revokeObjectURL(previews[index].url);
     }
     selectedFiles((prev) => prev.filter((_, i) => i !== index));
+    setPreviews((prev) => prev.filter((_, i) => i !== index));
   };
 
   const handleUpload = async () => {
