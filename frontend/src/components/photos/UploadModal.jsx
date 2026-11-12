@@ -13,6 +13,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
   const handleFiles = (files) => {
     if (!files) return;
+    const validFiles = Array.from(files).filter(
+      (f) => f.type.startsWith("image/") || f.type.startsWith("video/"),
+    );
   };
 
   const handleUpload = async () => {
