@@ -20,6 +20,14 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
     if (validFiles.length === 0) {
       toast.error("Please select valid image or video files.");
     }
+
+    const newSelected = [...selectedFiles, ...validFiles];
+    setSelectedFiles(newSelected);
+
+    const newPreviews = validFiles.map(() => ({
+      url: URL.createObjectURL(file),
+      isVideo: file.type.startsWith("video/"),
+    }));
   };
 
   const handleUpload = async () => {
