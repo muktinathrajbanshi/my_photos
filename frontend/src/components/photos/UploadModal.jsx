@@ -11,6 +11,10 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
 
   if (!isOpen) return null;
 
+  const handleFiles = (files) => {
+    if (!files) return;
+  };
+
   const handleUpload = async () => {
     console.log(selectedFiles);
   };
@@ -63,6 +67,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
               ref={fileInputRef}
               multiple
               accept="image/*,video/*"
+              onChange={(e) => handleFiles(e.target.files)}
             />
           </div>
 
