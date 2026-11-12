@@ -83,7 +83,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             onDragLeave={}
             onDrop={}
             onClick={}
-            className={`upload-dropzone`}
+            className={`upload-dropzone ${isDragging ? "upload-dropzone-active" : "upload-dropzone-idle"}`}
           >
             <h3 className="font-medium text-slate-800 text-sm capitalize">
               Drag & Drop <span className="text-red-600">photos & videos</span>{" "}
