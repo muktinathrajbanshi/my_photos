@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { toast } from "react-hot-toast";
 
 import { X } from "lucide-react";
 
@@ -16,6 +17,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
     const validFiles = Array.from(files).filter(
       (f) => f.type.startsWith("image/") || f.type.startsWith("video/"),
     );
+    if (validFiles.length === 0) {
+      toast.error("Please select valid image or video files.");
+    }
   };
 
   const handleUpload = async () => {
