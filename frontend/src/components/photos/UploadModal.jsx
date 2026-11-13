@@ -110,6 +110,11 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
           </div>
 
           {/* Preview Grid  */}
+          {previews.length > 0 && (
+            <div>
+              <div></div>
+            </div>
+          )}
         </div>
 
         {/* Footer  */}
