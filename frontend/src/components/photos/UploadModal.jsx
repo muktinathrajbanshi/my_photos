@@ -81,7 +81,10 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
           <div
             onDragOver={(e) => {e.preventDefault(); setIsDragging(true)}}
             onDragLeave={() => setIsDragging(false)}
-            onDrop={}
+            onDrop={(e) => {
+              e.preventDefault();
+              setIsDragging(false)
+            }}
             onClick={}
             className={`upload-dropzone ${isDragging ? "upload-dropzone-active" : "upload-dropzone-idle"}`}
           >
