@@ -116,7 +116,13 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                 <span className="text-xs text-slate-600 font-medium">
                   Selected ({previews.length})
                 </span>
-                <button className="text-xs text-rose-500 hover:underline cursor-pointer">
+                <button
+                  onClick={() => {
+                    previews.forEach((p) => URL.revokeObjectURL(p.url));
+                    setSelectedFiles([]);
+                  }}
+                  className="text-xs text-rose-500 hover:underline cursor-pointer"
+                >
                   Clear all
                 </button>
               </div>
