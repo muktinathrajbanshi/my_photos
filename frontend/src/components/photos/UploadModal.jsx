@@ -116,6 +116,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                 <span className="text-xs text-slate-600 font-medium">
                   Selected ({previews.length})
                 </span>
+                <button className="text-xs text-rose-500 hover:underline cursor-pointer">
+                  Clear all
+                </button>
               </div>
             </div>
           )}
