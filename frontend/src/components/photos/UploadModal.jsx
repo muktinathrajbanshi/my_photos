@@ -112,7 +112,11 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
           {/* Preview Grid  */}
           {previews.length > 0 && (
             <div>
-              <div className="flex items-center justify-between mb-2"></div>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-xs text-slate-600 font-medium">
+                  Selected ({previews.length})
+                </span>
+              </div>
             </div>
           )}
         </div>
