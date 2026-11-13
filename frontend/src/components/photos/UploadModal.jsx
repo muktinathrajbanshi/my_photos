@@ -87,6 +87,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             onDrop={(e) => {
               e.preventDefault();
               setIsDragging(false);
+              handleFiles(e.dataTransfer.files);
             }}
             onClick={() => fileInputRef.current?.click()}
             className={`upload-dropzone ${isDragging ? "upload-dropzone-active" : "upload-dropzone-idle"}`}
