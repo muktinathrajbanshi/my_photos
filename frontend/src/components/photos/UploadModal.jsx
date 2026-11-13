@@ -79,13 +79,16 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
         <div className="p-6 overflow-y-auto space-y-4">
           {/* Drag and Drop Box  */}
           <div
-            onDragOver={(e) => {e.preventDefault(); setIsDragging(true)}}
+            onDragOver={(e) => {
+              e.preventDefault();
+              setIsDragging(true);
+            }}
             onDragLeave={() => setIsDragging(false)}
             onDrop={(e) => {
               e.preventDefault();
-              setIsDragging(false)
+              setIsDragging(false);
             }}
-            onClick={}
+            onClick={() => fileInputRef.current?.click()}
             className={`upload-dropzone ${isDragging ? "upload-dropzone-active" : "upload-dropzone-idle"}`}
           >
             <h3 className="font-medium text-slate-800 text-sm capitalize">
