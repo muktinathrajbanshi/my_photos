@@ -79,7 +79,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
         <div className="p-6 overflow-y-auto space-y-4">
           {/* Drag and Drop Box  */}
           <div
-            onDragOver={}
+            onDragOver={(e) => {e.preventDefault(); setIsDragging(true)}}
             onDragLeave={}
             onDrop={}
             onClick={}
