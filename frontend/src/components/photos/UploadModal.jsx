@@ -134,11 +134,11 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                     className="relative group aspect-square rounded-xl overflow-xl overflow-hidden border border-slate-200 bg-slate-100"
                   >
                     {preview.isVideo ? (
-                      <div></div>
+                      <div className="size-full relative bg-slate-900 flex items-center justify-center"></div>
                     ) : (
                       <img
                         src={preview.url}
-                        alt="img"
+                        alt="upload-preview"
                         className="size-full object-cover"
                       />
                     )}
