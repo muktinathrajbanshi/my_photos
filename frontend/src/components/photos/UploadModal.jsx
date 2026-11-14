@@ -141,8 +141,12 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                           muted
                           playsInline
                         />
-                        <div>
+                        <div
+                          className="absolute bottom-1 left-1 px-1.5 py-0.5 bg-black/70 backdrop-blur-xs
+                        rounded text-[10px] text-white flex items-center gap-1"
+                        >
                           <Film className="size-3 text-orange-400" />
+                          <span>Video</span>
                         </div>
                       </div>
                     ) : (
