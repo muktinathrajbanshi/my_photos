@@ -127,7 +127,14 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                   Clear all
                 </button>
               </div>
-              <div className="grid grid-cols-4 gap-3 max-h-48 overflow-y-auto p-1"></div>
+              <div className="grid grid-cols-4 gap-3 max-h-48 overflow-y-auto p-1">
+                {previews.map((preview, idx) => (
+                  <div
+                    key={idx}
+                    className="relative group aspect-square rounded-xl overflow-xl overflow-hidden border"
+                  ></div>
+                ))}
+              </div>
             </div>
           )}
         </div>
