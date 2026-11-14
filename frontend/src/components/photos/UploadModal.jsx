@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { toast } from "react-hot-toast";
 
-import { X } from "lucide-react";
+import { Film, X } from "lucide-react";
 
 const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -141,6 +141,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                           muted
                           playsInline
                         />
+                        <div>
+                          <Film className="size-3 text-orange-400" />
+                        </div>
                       </div>
                     ) : (
                       <img
