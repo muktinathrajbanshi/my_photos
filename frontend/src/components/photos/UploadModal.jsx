@@ -127,7 +127,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                   Clear all
                 </button>
               </div>
-              <div></div>
+              <div className="grid grid-cols-4 gap-3 max-h-48 overflow-y-auto p-1"></div>
             </div>
           )}
         </div>
