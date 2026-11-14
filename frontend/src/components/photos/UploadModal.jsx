@@ -132,7 +132,17 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                   <div
                     key={idx}
                     className="relative group aspect-square rounded-xl overflow-xl overflow-hidden border border-slate-200 bg-slate-100"
-                  ></div>
+                  >
+                    {preview.isVideo ? (
+                      <div></div>
+                    ) : (
+                      <img
+                        src={preview.url}
+                        alt="img"
+                        className="size-full object-cover"
+                      />
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
