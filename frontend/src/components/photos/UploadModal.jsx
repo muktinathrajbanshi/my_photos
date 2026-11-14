@@ -131,7 +131,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                 {previews.map((preview, idx) => (
                   <div
                     key={idx}
-                    className="relative group aspect-square rounded-xl overflow-xl overflow-hidden border"
+                    className="relative group aspect-square rounded-xl overflow-xl overflow-hidden border border-slate-200 bg-slate-100"
                   ></div>
                 ))}
               </div>
