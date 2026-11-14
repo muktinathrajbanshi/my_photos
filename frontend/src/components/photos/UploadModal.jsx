@@ -24,7 +24,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
     const newSelected = [...selectedFiles, ...validFiles];
     setSelectedFiles(newSelected);
 
-    const newPreviews = validFiles.map(() => ({
+    const newPreviews = validFiles.map((file) => ({
       url: URL.createObjectURL(file),
       isVideo: file.type.startsWith("video/"),
       name: file.name,
@@ -36,7 +36,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
     if (previews[index]) {
       URL.revokeObjectURL(previews[index].url);
     }
-    selectedFiles((prev) => prev.filter((_, i) => i !== index));
+    setSelectedFiles((prev) => prev.filter((_, i) => i !== index));
     setPreviews((prev) => prev.filter((_, i) => i !== index));
   };
 
@@ -70,7 +70,7 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             className="p-2 hover:bg-slate-100 text-slate-400
           hover:text-slate-600 rounded-full transition cursor-pointer"
           >
-            <X classNames="size-5" />
+            <X className="size-5" />
           </button>
         </div>
 
