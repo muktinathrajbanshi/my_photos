@@ -120,12 +120,14 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                   onClick={() => {
                     previews.forEach((p) => URL.revokeObjectURL(p.url));
                     setSelectedFiles([]);
+                    setPreviews([]);
                   }}
                   className="text-xs text-rose-500 hover:underline cursor-pointer"
                 >
                   Clear all
                 </button>
               </div>
+              <div></div>
             </div>
           )}
         </div>
