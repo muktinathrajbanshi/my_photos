@@ -156,6 +156,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                         className="size-full object-cover"
                       />
                     )}
+                    <button>
+                      <X className="size-3" />
+                    </button>
                   </div>
                 ))}
               </div>
