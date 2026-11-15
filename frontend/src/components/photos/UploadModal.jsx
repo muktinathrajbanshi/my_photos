@@ -175,7 +175,11 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
         </div>
 
         {/* Footer  */}
-        <div></div>
+        <div className="modal-footer">
+          <div className="flex items-center gap-2">
+            <button>Cancel</button>
+          </div>
+        </div>
       </div>
     </div>
   );
