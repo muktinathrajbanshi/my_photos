@@ -156,7 +156,10 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                         className="size-full object-cover"
                       />
                     )}
-                    <button>
+                    <button
+                      className="absolute top-1 right-1 p-1 bg-black/60 hover:bg-rose-600 text-white rounded-full
+                    "
+                    >
                       <X className="size-3" />
                     </button>
                   </div>
