@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { toast } from "react-hot-toast";
 
-import { Film, X } from "lucide-react";
+import { Film, X, Loading } from "lucide-react";
 
 const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -190,7 +190,14 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
               disabled={uploading || selectedFiles.length === 0}
               className="btn-secondary"
             >
-              Cancel
+              {uploading ? (
+                <>
+                  <Loading inline size="xs" />
+                  <span>Uploading...</span>
+                </>
+              ) : (
+                <span></span>
+              )}
             </button>
           </div>
         </div>
