@@ -196,7 +196,9 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
                   <span>Uploading...</span>
                 </>
               ) : (
-                <span></span>
+                <span>
+                  Upload {selectedFiles.length > 0 ? `(${selectedFiles.length})`}
+                </span>
               )}
             </button>
           </div>
