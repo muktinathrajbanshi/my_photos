@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { toast } from "react-hot-toast";
 
-import { Film, X, Loading } from "lucide-react";
+import { Film, X, LoaderCircle } from "lucide-react";
 
 const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -188,16 +188,17 @@ const UploadModal = ({ isOpen, onClose, onUploadSuccess }) => {
             <button
               onClick={handleUpload}
               disabled={uploading || selectedFiles.length === 0}
-              className="btn-secondary"
+              className="btn-primary"
             >
               {uploading ? (
                 <>
-                  <Loading inline size="xs" />
+                  <LoaderCircle className="size-4 animate-spin" />
                   <span>Uploading...</span>
                 </>
               ) : (
                 <span>
-                  Upload {selectedFiles.length > 0 ? `(${selectedFiles.length})`}
+                  Upload
+                  {selectedFiles.length > 0 ? `(${selectedFiles.length})` : ""}
                 </span>
               )}
             </button>
