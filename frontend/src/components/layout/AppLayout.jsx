@@ -51,7 +51,13 @@ const AppLayout = () => {
           onCloseMobile={() => setIsMobileSidebarOpen(false)}
         />
         <main className="app-main-content">
-          <Outlet />
+          <Outlet
+            context={{
+              searchQuery,
+              onOpenUpload: () => setIsUploadOpen(true),
+              openCreateAlbum,
+            }}
+          />
         </main>
       </div>
 
