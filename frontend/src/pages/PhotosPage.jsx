@@ -40,6 +40,10 @@ const PhotosPage = () => {
               </span>
             )}
           </h2>
+          <p className="text-xs text-slate-500 mt-0.5">
+            All your preserved photos and videos, automatically organized by
+            date
+          </p>
         </div>
 
         {/* right  */}
