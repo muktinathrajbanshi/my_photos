@@ -31,7 +31,14 @@ const PhotosPage = () => {
         <div>
           <h2>
             Photos & Videos
-            {photos.length > 0 && <span>{photos.length}</span>}
+            {photos.length > 0 && (
+              <span
+                className="text-sm font-semibold text-slate-400 bg-slate-100
+            px-2.5 py-0.5 rounded-full"
+              >
+                {photos.length}
+              </span>
+            )}
           </h2>
         </div>
 
