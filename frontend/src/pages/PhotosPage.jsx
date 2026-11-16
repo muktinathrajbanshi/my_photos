@@ -26,7 +26,17 @@ const PhotosPage = () => {
       <div
         className="flex flex-col sm:flex-row sm:items-center justify-between
       gap-4 pb-2 border-b border-slate-200/60"
-      ></div>
+      >
+        {/* left  */}
+        <div>
+          <h2>
+            Photos & Videos
+            {photos.length > 0 && <span>{photos.length}</span>}
+          </h2>
+        </div>
+
+        {/* right  */}
+      </div>
 
       {/* Media Content  */}
     </div>
