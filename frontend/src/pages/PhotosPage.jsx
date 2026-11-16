@@ -6,6 +6,7 @@ const PhotosPage = () => {
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedIds, setSelectedIds] = useState([]);
+  const [filterType, setFilterType] = useState("all");
 
   return <div>PhotosPage</div>;
 };
