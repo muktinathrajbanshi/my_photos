@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
 
@@ -12,8 +12,13 @@ const PhotosPage = () => {
   const fetchPhotos = async () => {
     setTimeout(() => {
       setPhotos(DUMMY_MEDIA);
+      setLoading(false);
     }, 1000);
   };
+
+  useEffect(() => {
+    fetchPhotos();
+  }, [searchQuery, filterType]);
 
   return <div>PhotosPage</div>;
 };
