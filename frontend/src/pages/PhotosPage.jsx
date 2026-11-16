@@ -29,7 +29,7 @@ const PhotosPage = () => {
       >
         {/* left  */}
         <div>
-          <h2>
+          <h2 className="text-2xl font-medium text-slate-900 tracking-tight flex items-center gap-2">
             Photos & Videos
             {photos.length > 0 && (
               <span
