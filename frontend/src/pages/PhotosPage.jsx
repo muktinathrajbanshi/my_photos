@@ -98,7 +98,11 @@ const PhotosPage = () => {
       {loading ? (
         <Loading />
       ) : photos.length === 0 ? (
-        <p>no media</p>
+        <div className="empty-state-card">
+          <h3>
+            {searchQuery ? "No matching media" : "Your media library is empty"}
+          </h3>
+        </div>
       ) : (
         <div>media file</div>
       )}
