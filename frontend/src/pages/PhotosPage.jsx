@@ -100,7 +100,7 @@ const PhotosPage = () => {
       ) : photos.length === 0 ? (
         <p>no media</p>
       ) : (
-        <div></div>
+        <div>media file</div>
       )}
     </div>
   );
