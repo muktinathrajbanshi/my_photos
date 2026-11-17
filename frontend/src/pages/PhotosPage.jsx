@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
 import { Film, ImageIcon } from "lucide-react";
+import Loading from "../components/common/Loading";
 
 const PhotosPage = () => {
   const { searchQuery, onOpenUpload, openCreateAlbum } = useOutletContext();
@@ -94,6 +95,9 @@ const PhotosPage = () => {
       </div>
 
       {/* Media Content  */}
+      {loading ? (
+        <Loading />
+      )}
     </div>
   );
 };
