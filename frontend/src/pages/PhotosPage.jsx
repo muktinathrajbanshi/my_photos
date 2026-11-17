@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
+import { ImageIcon } from "lucide-react";
 
 const PhotosPage = () => {
   const { searchQuery, onOpenUpload, openCreateAlbum } = useOutletContext();
@@ -52,8 +53,26 @@ const PhotosPage = () => {
             className="flex items-center bg-slate-100 p-1 rounded-full text-xs
             font-medium text-slate-600"
           >
-            <button className={`px-3 py-1 rounded-full transition cursor-pointer ${filterType === "all" ? "bg-white text-slate-900 font-semibold"}`}
+            <button
+              className={`px-3 py-1 rounded-full transition cursor-pointer 
+            ${
+              filterType === "all"
+                ? "bg-white text-slate-900 font-semibold"
+                : "hover:text-slate-900"
+            }`}
+            >
               All
+            </button>
+            <button
+              className={`px-3 py-1 rounded-full transition cursor-pointer 
+            ${
+              filterType === "all"
+                ? "bg-white text-slate-900 font-semibold"
+                : "hover:text-slate-900"
+            }`}
+            >
+              <ImageIcon />
+              <span>Photos</span>
             </button>
           </div>
         </div>
