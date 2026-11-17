@@ -51,7 +51,11 @@ const PhotosPage = () => {
           <div
             className="flex items-center bg-slate-100 p-1 rounded-full text-xs
             font-medium text-slate-600"
-          ></div>
+          >
+            <button className={`px-3 py-1 rounded-full transition cursor-pointer`}
+              All
+            </button>
+          </div>
         </div>
       </div>
 
