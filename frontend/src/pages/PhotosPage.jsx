@@ -78,6 +78,7 @@ const PhotosPage = () => {
             </button>
 
             <button
+              onClick={() => setFilterType("video")}
               className={`flex items-center gap-1 px-3 py-1 rounded-full transition cursor-pointer 
             ${
               filterType === "video"
