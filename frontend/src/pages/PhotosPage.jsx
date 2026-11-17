@@ -52,7 +52,7 @@ const PhotosPage = () => {
             className="flex items-center bg-slate-100 p-1 rounded-full text-xs
             font-medium text-slate-600"
           >
-            <button className={`px-3 py-1 rounded-full transition cursor-pointer`}
+            <button className={`px-3 py-1 rounded-full transition cursor-pointer ${filterType === "all" ? "bg-white text-slate-900 font-semibold"}`}
               All
             </button>
           </div>
