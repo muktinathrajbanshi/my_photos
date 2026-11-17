@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
-import { ImageIcon } from "lucide-react";
+import { Film, ImageIcon } from "lucide-react";
 
 const PhotosPage = () => {
   const { searchQuery, onOpenUpload, openCreateAlbum } = useOutletContext();
@@ -66,12 +66,24 @@ const PhotosPage = () => {
             <button
               className={`px-3 py-1 rounded-full transition cursor-pointer 
             ${
-              filterType === "all"
+              filterType === "image"
                 ? "bg-white text-slate-900 font-semibold"
                 : "hover:text-slate-900"
             }`}
             >
-              <ImageIcon />
+              <ImageIcon className="size-3" />
+              <span>Photos</span>
+            </button>
+
+            <button
+              className={`px-3 py-1 rounded-full transition cursor-pointer 
+            ${
+              filterType === "video"
+                ? "bg-white text-slate-900 font-semibold"
+                : "hover:text-slate-900"
+            }`}
+            >
+              <Film className="size-3" />
               <span>Photos</span>
             </button>
           </div>
