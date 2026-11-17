@@ -64,7 +64,7 @@ const PhotosPage = () => {
               All
             </button>
             <button
-              className={`px-3 py-1 rounded-full transition cursor-pointer 
+              className={`flex items-center gap-1 px-3 py-1 rounded-full transition cursor-pointer 
             ${
               filterType === "image"
                 ? "bg-white text-slate-900 font-semibold"
