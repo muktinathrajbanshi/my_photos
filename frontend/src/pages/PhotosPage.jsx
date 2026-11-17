@@ -47,6 +47,12 @@ const PhotosPage = () => {
         </div>
 
         {/* right  */}
+        <div className="flex items-center gap-2.5">
+          <div
+            className="flex items-center bg-slate-100 p-1 rounded-full text-xs
+            font-medium text-slate-600"
+          ></div>
+        </div>
       </div>
 
       {/* Media Content  */}
