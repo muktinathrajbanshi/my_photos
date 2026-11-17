@@ -84,7 +84,7 @@ const PhotosPage = () => {
             }`}
             >
               <Film className="size-3" />
-              <span>Photos</span>
+              <span>Videos</span>
             </button>
           </div>
         </div>
