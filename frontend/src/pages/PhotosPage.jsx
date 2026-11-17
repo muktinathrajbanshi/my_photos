@@ -54,6 +54,7 @@ const PhotosPage = () => {
             font-medium text-slate-600"
           >
             <button
+              onClick={() => setFilterType("all")}
               className={`px-3 py-1 rounded-full transition cursor-pointer 
             ${
               filterType === "all"
@@ -64,6 +65,7 @@ const PhotosPage = () => {
               All
             </button>
             <button
+              onClick={() => setFilterType("image")}
               className={`flex items-center gap-1 px-3 py-1 rounded-full transition cursor-pointer 
             ${
               filterType === "image"
