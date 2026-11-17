@@ -97,6 +97,10 @@ const PhotosPage = () => {
       {/* Media Content  */}
       {loading ? (
         <Loading />
+      ) : photos.length === 0 ? (
+        <p>no media</p>
+      ) : (
+        <div></div>
       )}
     </div>
   );
