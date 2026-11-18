@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 const PhotoGrid = ({
   photos,
   selectedIds,
@@ -6,7 +8,12 @@ const PhotoGrid = ({
   onSelectPhoto,
   onRemoveFromAlbum,
 }) => {
-  return <div className="space-y-8 pb-16"></div>;
+  const grouped = useMemo(() => {
+    const groups = {};
+    const today = new Date().toDateString();
+  }, [photos]);
+
+  return <div className="space-y-8 pb-16">{}</div>;
 };
 
 export default PhotoGrid;
