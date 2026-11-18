@@ -105,7 +105,7 @@ const PhotosPage = () => {
           <p>
             {searchQuery
               ? `No media found for "${searchQuery}". Try a different keyword.`
-              : "Your media library is empty"}
+              : "Upload high quality photos and videos from your computer."}
           </p>
         </div>
       ) : (
