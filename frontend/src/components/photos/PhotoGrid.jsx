@@ -14,7 +14,8 @@ const PhotoGrid = ({
     const yesterday = new Date(Date.now() - 86400000).toDateString();
 
     photos.forEach((photo) => {
-      const dateObj = new Date();
+      const dateObj = new Date(photo.createdAt);
+      const dateStr = dateObj.toDateString();
     });
   }, [photos]);
 
