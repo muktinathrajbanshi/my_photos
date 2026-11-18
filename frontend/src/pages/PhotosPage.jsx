@@ -108,6 +108,7 @@ const PhotosPage = () => {
               : "Upload high quality photos and videos from your computer."}
           </p>
           <button
+            onClick={onOpenUpload}
             className="mt-6 inline-flex items-center gap-2 px-6 py-2.5 bg-red-600
           hover:bg-red-700 text-white text-xs font-medium rounded-full transition cursor-pointer"
           >
