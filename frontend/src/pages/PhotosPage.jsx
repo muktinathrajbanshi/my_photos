@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
-import { Film, ImageIcon } from "lucide-react";
+import { Film, ImageIcon, Upload } from "lucide-react";
 import Loading from "../components/common/Loading";
 
 const PhotosPage = () => {
@@ -107,6 +107,10 @@ const PhotosPage = () => {
               ? `No media found for "${searchQuery}". Try a different keyword.`
               : "Upload high quality photos and videos from your computer."}
           </p>
+          <button>
+            <Upload className="size-4" />
+            <span>Upload Media Now</span>
+          </button>
         </div>
       ) : (
         <div>media file</div>
