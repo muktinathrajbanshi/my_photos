@@ -107,7 +107,10 @@ const PhotosPage = () => {
               ? `No media found for "${searchQuery}". Try a different keyword.`
               : "Upload high quality photos and videos from your computer."}
           </p>
-          <button>
+          <button
+            className="mt-6 inline-flex items-center gap-2 px-6 py-2.5 bg-red-600
+          hover:bg-red-700 text-white text-xs font-medium rounded-full transition cursor-pointer"
+          >
             <Upload className="size-4" />
             <span>Upload Media Now</span>
           </button>
