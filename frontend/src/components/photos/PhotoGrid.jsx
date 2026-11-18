@@ -6,7 +6,7 @@ const PhotoGrid = ({
   onSelectPhoto,
   onRemoveFromAlbum,
 }) => {
-  return <div></div>;
+  return <div className="space-y-8 pb-16"></div>;
 };
 
 export default PhotoGrid;
