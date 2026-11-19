@@ -28,10 +28,31 @@ const PhotoGrid = ({
       } else if (dateStr === yesterday) {
         label = "Yesterday";
       }
+
+      if (!groups[label]) groups[label] = [];
+      groups[label].push(photo);
     });
+
+    return groups;
   }, [photos]);
 
-  return <div className="space-y-8 pb-16">{}</div>;
+  return (
+    <div className="space-y-8 pb-16">
+      {Object.entries(grouped).map(([dateLabel, groupPhotos]) => {
+        const isGroupAllSelected =
+          groupPhotos.label > 0 &&
+          groupPhotos.every((p) => selectedIds.includes(p._id));
+
+        return (
+          <div className="space-y-3" key={dateLabel}>
+            {/* Date Header  */}
+
+            {/* Media Grid  */}
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default PhotoGrid;
