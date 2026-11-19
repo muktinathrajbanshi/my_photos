@@ -46,6 +46,15 @@ const PhotoGrid = ({
         return (
           <div className="space-y-3" key={dateLabel}>
             {/* Date Header  */}
+            <div className="flex items-center gap-2 backdrop-blur-xs py-2 z-20">
+              <button>
+                <span>
+                  <CheckCircle2Icon
+                    className={`size-4 transition ${isGroupAllSelected ? "text-red-600 fill-red-100" : "text-transparent group-hover/btn:text-slate-300"}`}
+                  />
+                </span>
+              </button>
+            </div>
 
             {/* Media Grid  */}
           </div>
