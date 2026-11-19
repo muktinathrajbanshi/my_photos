@@ -1,5 +1,7 @@
 import { useMemo } from "react";
 
+import { CheckCircle2Icon } from "lucid-react";
+
 const PhotoGrid = ({
   photos,
   selectedIds,
