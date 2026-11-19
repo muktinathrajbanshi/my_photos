@@ -22,6 +22,12 @@ const PhotoGrid = ({
         day: "numeric",
         year: "numeric",
       });
+
+      if (dateStr === today) {
+        label = "Today";
+      } else if (dateStr === yesterday) {
+        label = "Yesterday";
+      }
     });
   }, [photos]);
 
