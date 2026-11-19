@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import { CheckCircle2Icon } from "lucid-react";
+import { CheckCircle2Icon } from "lucide-react";
 
 const PhotoGrid = ({
   photos,
@@ -42,7 +42,7 @@ const PhotoGrid = ({
     <div className="space-y-8 pb-16">
       {Object.entries(grouped).map(([dateLabel, groupPhotos]) => {
         const isGroupAllSelected =
-          groupPhotos.label > 0 &&
+          groupPhotos.length > 0 &&
           groupPhotos.every((p) => selectedIds.includes(p._id));
 
         return (
