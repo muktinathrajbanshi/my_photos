@@ -16,6 +16,7 @@ const PhotoGrid = ({
     photos.forEach((photo) => {
       const dateObj = new Date(photo.createdAt);
       const dateStr = dateObj.toDateString();
+      let label = dateObj.toLocaleDateString();
     });
   }, [photos]);
 
