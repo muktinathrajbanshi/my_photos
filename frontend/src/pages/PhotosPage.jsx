@@ -12,6 +12,8 @@ const PhotosPage = () => {
   const [selectedIds, setSelectedIds] = useState([]);
   const [filterType, setFilterType] = useState("all");
 
+  const [activePhoto, setActivePhoto] = useState(null)
+
   const fetchPhotos = async () => {
     setTimeout(() => {
       setPhotos(DUMMY_MEDIA);
