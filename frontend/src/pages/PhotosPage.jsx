@@ -37,6 +37,14 @@ const PhotosPage = () => {
     console.log(id);
   };
 
+  const handleBulkFavorite = async (id) => {
+    console.log(selectedIds);
+  };
+
+  const handleBulkTrash = async (id) => {
+    console.log(selectedIds);
+  };
+
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Header info  */}
