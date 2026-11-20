@@ -39,7 +39,12 @@ const PhotoGrid = ({
   }, [photos]);
 
   const selectGroup = (groupPhotos) => {
-    const allSelected = groupPhotos.every((p) => selectedIds.includes(p._id))
+    const allSelected = groupPhotos.every((p) => selectedIds.includes(p._id));
+    groupPhotos.forEach((p) => {
+      if (allSelected && selectedIds.includes(p._id)) {
+        onToggleSelect(p._id)
+      }
+    })
   }
 
   return (
