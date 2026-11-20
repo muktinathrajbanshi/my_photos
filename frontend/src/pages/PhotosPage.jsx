@@ -3,6 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
 import { Film, ImageIcon, Upload } from "lucide-react";
 import Loading from "../components/common/Loading";
+import PhotoGrid from "../components/photos/PhotoGrid";
 
 const PhotosPage = () => {
   const { searchQuery, onOpenUpload, openCreateAlbum } = useOutletContext();
@@ -117,7 +118,7 @@ const PhotosPage = () => {
           </button>
         </div>
       ) : (
-        <div>media file</div>
+        <PhotoGrid />
       )}
     </div>
   );

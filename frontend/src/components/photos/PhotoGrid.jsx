@@ -44,7 +44,7 @@ const PhotoGrid = ({
       if (allSelected && selectedIds.includes(p._id)) {
         onToggleSelect(p._id)
       } else if(!allSelected && !selectedIds.includes(p._id)) {
-        
+        onToggleSelect(p._id);
       }
     })
   }
@@ -61,7 +61,7 @@ const PhotoGrid = ({
             {/* Date Header  */}
             <div className="flex items-center gap-2 backdrop-blur-xs py-2 z-20">
               <button 
-                onClick={() => }
+                onClick={() => selectGroup(groupPhotos)}
                 className={`group/btn flex items-center gap-2 text-sm font-medium tracking-tight transition cursor-pointer 
                 ${isGroupAllSelected ? "text-red-600" : "text-slate-800 hover:text-red-600"}`} 
                 title="Select all in this day"
