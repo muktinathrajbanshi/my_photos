@@ -37,11 +37,11 @@ const PhotosPage = () => {
     console.log(id);
   };
 
-  const handleBulkFavorite = async (id) => {
+  const handleBulkFavorite = async () => {
     console.log(selectedIds);
   };
 
-  const handleBulkTrash = async (id) => {
+  const handleBulkTrash = async () => {
     console.log(selectedIds);
   };
 
@@ -140,7 +140,8 @@ const PhotosPage = () => {
           </button>
         </div>
       ) : (
-        <PhotoGrid photos={photos} selectedIds={selectedIds} />
+        <PhotoGrid photos={photos} selectedIds={selectedIds} onToggleSelect={toggleSelect}
+        onToggleFavorite={toggleFavorite} onSelectPhoto={() => } />
       )}
     </div>
   );
