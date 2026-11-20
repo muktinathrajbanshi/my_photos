@@ -43,6 +43,8 @@ const PhotoGrid = ({
     groupPhotos.forEach((p) => {
       if (allSelected && selectedIds.includes(p._id)) {
         onToggleSelect(p._id)
+      } else if(!allSelected && !selectedIds.includes(p._id)) {
+        
       }
     })
   }
