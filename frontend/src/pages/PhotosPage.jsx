@@ -33,6 +33,10 @@ const PhotosPage = () => {
     console.log(id);
   };
 
+  const handleTrash = async (id) => {
+    console.log(id);
+  };
+
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Header info  */}
