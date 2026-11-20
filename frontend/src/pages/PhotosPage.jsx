@@ -118,7 +118,7 @@ const PhotosPage = () => {
           </button>
         </div>
       ) : (
-        <PhotoGrid />
+        <PhotoGrid photos={photos} selectedIds={selectedIds} />
       )}
     </div>
   );
