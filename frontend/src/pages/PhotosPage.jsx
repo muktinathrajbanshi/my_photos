@@ -23,6 +23,12 @@ const PhotosPage = () => {
     fetchPhotos();
   }, [searchQuery, filterType]);
 
+  const toggleSelect = (id) => {
+    selectedIds((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
+    );
+  };
+
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       {/* Header info  */}
