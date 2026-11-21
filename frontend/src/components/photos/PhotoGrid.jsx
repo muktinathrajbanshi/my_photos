@@ -79,7 +79,11 @@ const PhotoGrid = ({
             </div>
 
             {/* Media Grid  */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3"></div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+              {groupPhotos.map((photo) => (
+                <img src={photo} alt="" />
+              ))}
+            </div>
           </div>
         );
       })}
