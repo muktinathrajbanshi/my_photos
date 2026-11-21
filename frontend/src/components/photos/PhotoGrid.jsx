@@ -72,6 +72,9 @@ const PhotoGrid = ({
                   />
                 </span>
               </button>
+              <h3 className="text-sm font-semibold text-slate-700">
+                {dateLabel}
+              </h3>
             </div>
 
             {/* Media Grid  */}
