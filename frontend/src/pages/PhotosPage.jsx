@@ -12,7 +12,7 @@ const PhotosPage = () => {
   const [selectedIds, setSelectedIds] = useState([]);
   const [filterType, setFilterType] = useState("all");
 
-  const [activePhoto, setActivePhoto] = useState(null)
+  const [activePhoto, setActivePhoto] = useState(null);
 
   const fetchPhotos = async () => {
     setTimeout(() => {
@@ -142,8 +142,13 @@ const PhotosPage = () => {
           </button>
         </div>
       ) : (
-        <PhotoGrid photos={photos} selectedIds={selectedIds} onToggleSelect={toggleSelect}
-        onToggleFavorite={toggleFavorite} onSelectPhoto={() => } />
+        <PhotoGrid
+          photos={photos}
+          selectedIds={selectedIds}
+          onToggleSelect={toggleSelect}
+          onToggleFavorite={toggleFavorite}
+          onSelectPhoto={(photo) => setActivePhoto(photo)}
+        />
       )}
     </div>
   );
