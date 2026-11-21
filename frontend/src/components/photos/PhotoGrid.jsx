@@ -73,7 +73,9 @@ const PhotoGrid = ({
                 </span>
                 <span>{dateLabel}</span>
               </button>
-              <span>({groupPhotos.length})</span>
+              <span className="text-xs text-slate-400 font-medium">
+                ({groupPhotos.length})
+              </span>
             </div>
 
             {/* Media Grid  */}
