@@ -71,10 +71,8 @@ const PhotoGrid = ({
                     className={`size-4 transition ${isGroupAllSelected ? "text-red-600 fill-red-100" : "text-transparent group-hover/btn:text-slate-300"}`}
                   />
                 </span>
+                <span>{dateLabel}</span>
               </button>
-              <h3 className="text-sm font-semibold text-slate-700">
-                {dateLabel}
-              </h3>
             </div>
 
             {/* Media Grid  */}
