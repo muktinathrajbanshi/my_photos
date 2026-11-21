@@ -42,12 +42,12 @@ const PhotoGrid = ({
     const allSelected = groupPhotos.every((p) => selectedIds.includes(p._id));
     groupPhotos.forEach((p) => {
       if (allSelected && selectedIds.includes(p._id)) {
-        onToggleSelect(p._id)
-      } else if(!allSelected && !selectedIds.includes(p._id)) {
+        onToggleSelect(p._id);
+      } else if (!allSelected && !selectedIds.includes(p._id)) {
         onToggleSelect(p._id);
       }
-    })
-  }
+    });
+  };
 
   return (
     <div className="space-y-8 pb-16">
@@ -60,16 +60,17 @@ const PhotoGrid = ({
           <div className="space-y-3" key={dateLabel}>
             {/* Date Header  */}
             <div className="flex items-center gap-2 backdrop-blur-xs py-2 z-20">
-              <button 
+              <button
                 onClick={() => selectGroup(groupPhotos)}
                 className={`group/btn flex items-center gap-2 text-sm font-medium tracking-tight transition cursor-pointer 
-                ${isGroupAllSelected ? "text-red-600" : "text-slate-800 hover:text-red-600"}`} 
+                ${isGroupAllSelected ? "text-red-600" : "text-slate-800 hover:text-red-600"}`}
                 title="Select all in this day"
-                  <span className="size-5 rounded-full border border-slate-300 group-hover/btn:border-red-500 flex items-center justify-center text-xs">
-                    <CheckCircle2Icon
-                      className={`size-4 transition ${isGroupAllSelected ? "text-red-600 fill-red-100" : "text-transparent group-hover/btn:text-slate-300"}`}
-                    />
-                  </span>
+              >
+                <span className="size-5 rounded-full border border-slate-300 group-hover/btn:border-red-500 flex items-center justify-center text-xs">
+                  <CheckCircle2Icon
+                    className={`size-4 transition ${isGroupAllSelected ? "text-red-600 fill-red-100" : "text-transparent group-hover/btn:text-slate-300"}`}
+                  />
+                </span>
               </button>
             </div>
 

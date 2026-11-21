@@ -26,7 +26,7 @@ const PhotosPage = () => {
   }, [searchQuery, filterType]);
 
   const toggleSelect = (id) => {
-    selectedIds((prev) =>
+    setSelectedIds((prev) =>
       prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
   };
