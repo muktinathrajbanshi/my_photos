@@ -12,9 +12,11 @@ const PhotoCard = ({
   const isVideo =
     photo.mediaType === "video" ||
     photo.format === "mp4" ||
-    photo.format === "mov";
+    photo.format === "mov" ||
+    photo.format === "webm" ||
+    photo.url?.endsWith(".mp4");
 
-  return <div>PhotoCard</div>;
+  return <div className="">PhotoCard</div>;
 };
 
 export default PhotoCard;
