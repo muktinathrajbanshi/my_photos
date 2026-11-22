@@ -87,6 +87,8 @@ const PhotoGrid = ({
                   photo={photo}
                   isSelected={selectedIds.includes(photo._id)}
                   onToggleSelect={() => onToggleSelect(photo._id)}
+                  onToggleFavorite={() => onToggleFavorite(photo._id)}
+                  onClick={() => onSelectPhoto(photo)}
                 />
               ))}
             </div>
