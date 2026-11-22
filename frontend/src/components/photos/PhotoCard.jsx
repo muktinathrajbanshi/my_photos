@@ -9,6 +9,10 @@ const PhotoCard = ({
   onRemoveFromAlbum,
 }) => {
   const [imgLoaded, setImgLoaded] = useState(false);
+  const isVideo =
+    photo.mediaType === "video" ||
+    photo.format === "mp4" ||
+    photo.format === "mov";
 
   return <div>PhotoCard</div>;
 };
