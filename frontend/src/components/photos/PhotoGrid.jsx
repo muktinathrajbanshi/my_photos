@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 
 import { CheckCircle2Icon } from "lucide-react";
+import PhotoCard from "./PhotoCard";
 
 const PhotoGrid = ({
   photos,
@@ -81,7 +82,11 @@ const PhotoGrid = ({
             {/* Media Grid  */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
               {groupPhotos.map((photo) => (
-                <img key={photo._id} src={photo.url} alt="" />
+                <PhotoCard
+                  key={photo._id}
+                  photo={photo}
+                  isSelected={selectedIds.includes()}
+                />
               ))}
             </div>
           </div>
