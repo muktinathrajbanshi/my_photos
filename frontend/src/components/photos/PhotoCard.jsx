@@ -19,7 +19,16 @@ const PhotoCard = ({
   return (
     <div className="group photo-card-container photo-card-hover">
       {/* Aspect Ratio Container  */}
-      <div className="aspect-4/3 w-full relative overflow-hidden bg-slate-100"></div>
+      <div className="aspect-4/3 w-full relative overflow-hidden bg-slate-100">
+        {!imgLoaded && (
+          <div
+            className="absolute inset-0 bg-slate-200/80
+        animate-pulse flex items-center justify-center text-xs text-slate-400"
+          >
+            Loading...
+          </div>
+        )}
+      </div>
     </div>
   );
 };
