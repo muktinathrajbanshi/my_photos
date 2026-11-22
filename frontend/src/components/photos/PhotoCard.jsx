@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const PhotoCard = ({
   photo,
   isSelected,
@@ -6,7 +8,9 @@ const PhotoCard = ({
   onClick,
   onRemoveFromAlbum,
 }) => {
-  return <div></div>;
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  return <div>PhotoCard</div>;
 };
 
 export default PhotoCard;
