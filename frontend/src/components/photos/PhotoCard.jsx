@@ -1,4 +1,4 @@
-const PhotoCard = ({}) => {
+const PhotoCard = ({ photo, isSelected, onToggleSelect, onToggleFavorite }) => {
   return <div></div>;
 };
 
