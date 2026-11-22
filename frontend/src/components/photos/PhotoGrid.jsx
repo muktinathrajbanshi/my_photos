@@ -85,7 +85,8 @@ const PhotoGrid = ({
                 <PhotoCard
                   key={photo._id}
                   photo={photo}
-                  isSelected={selectedIds.includes()}
+                  isSelected={selectedIds.includes(photo._id)}
+                  onToggleSelect={() => onToggleSelect(photo._id)}
                 />
               ))}
             </div>
