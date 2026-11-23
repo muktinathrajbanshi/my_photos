@@ -32,6 +32,8 @@ const PhotoCard = ({
           src={photo.thumbnailUrl || photo.url}
           alt={photo.title}
           loading="lazy"
+          onLoad={() => setImgLoaded(true)}
+          className={`photo-card-img ${imgLoaded ? "opacity-100" : "opacity-0"}`}
         />
       </div>
     </div>
