@@ -1,4 +1,4 @@
-import { PlayIcon } from "lucide-react";
+import { CheckIcon, PlayIcon } from "lucide-react";
 import { useState } from "react";
 
 const PhotoCard = ({
@@ -46,6 +46,10 @@ const PhotoCard = ({
         )}
 
         <div className="photo-card-overlay" />
+
+        <button>
+          <CheckIcon className={`size-3.5 ${isSelected ? "stroke-3" : ""}`} />
+        </button>
       </div>
     </div>
   );
