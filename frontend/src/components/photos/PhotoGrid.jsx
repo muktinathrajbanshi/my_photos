@@ -89,7 +89,11 @@ const PhotoGrid = ({
                   onToggleSelect={() => onToggleSelect(photo._id)}
                   onToggleFavorite={() => onToggleFavorite(photo._id)}
                   onClick={() => onSelectPhoto(photo)}
-                  onRemoveFromAlbum={onRemoveFromAlbum}
+                  onRemoveFromAlbum={
+                    onRemoveFromAlbum
+                      ? () => onRemoveFromAlbum(photo._id)
+                      : undefined
+                  }
                 />
               ))}
             </div>
