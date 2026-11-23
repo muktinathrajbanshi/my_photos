@@ -47,7 +47,7 @@ const PhotoCard = ({
 
         <div className="photo-card-overlay" />
 
-        <button>
+        <button className={`photo-card-select-btn ${isSelected ? "photo-card-select-active" : "photo-card-select-inactive"}`}
           <CheckIcon className={`size-3.5 ${isSelected ? "stroke-3" : ""}`} />
         </button>
       </div>
