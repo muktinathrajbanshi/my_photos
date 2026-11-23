@@ -40,9 +40,12 @@ const PhotoCard = ({
         {/* Video Badge (Bottom Right)  */}
         {isVideo && (
           <div className="photo-card-video-badge">
-            <PlayIcon />
+            <PlayIcon className="size-2.5 fill-white" />
+            <span>Video</span>
           </div>
         )}
+
+        <div className="photo-card-overlay" />
       </div>
     </div>
   );
