@@ -1,3 +1,4 @@
+import { PlayIcon } from "lucide-react";
 import { useState } from "react";
 
 const PhotoCard = ({
@@ -35,6 +36,13 @@ const PhotoCard = ({
           onLoad={() => setImgLoaded(true)}
           className={`photo-card-img ${imgLoaded ? "opacity-100" : "opacity-0"}`}
         />
+
+        {/* Video Badge (Bottom Right)  */}
+        {isVideo && (
+          <div className="photo-card-video-badge">
+            <PlayIcon />
+          </div>
+        )}
       </div>
     </div>
   );
