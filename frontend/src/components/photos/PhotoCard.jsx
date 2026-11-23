@@ -1,4 +1,4 @@
-import { CheckIcon, PlayIcon } from "lucide-react";
+import { CheckIcon, PlayIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 
 const PhotoCard = ({
@@ -47,14 +47,23 @@ const PhotoCard = ({
 
         <div className="photo-card-overlay" />
 
-        <button 
-        onClick={(e) => {
-          e.stopPropagation()
-          onToggleSelect(e)
-        }}
-        className={`photo-card-select-btn ${isSelected ? "photo-card-select-active" : "photo-card-select-inactive"}`}
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggleSelect(e);
+          }}
+          className={`photo-card-select-btn ${isSelected ? "photo-card-select-active" : "photo-card-select-inactive"}`}
+        >
           <CheckIcon className={`size-3.5 ${isSelected ? "stroke-3" : ""}`} />
         </button>
+
+        <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 z-10">
+          {onRemoveFromAlbum && (
+            <button>
+              <XIcon className="size-3.5" />
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
