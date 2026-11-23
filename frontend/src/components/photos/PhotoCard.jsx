@@ -28,7 +28,11 @@ const PhotoCard = ({
             Loading...
           </div>
         )}
-        <img src={photo.thumbnailUrl || photo.url} alt="" />
+        <img
+          src={photo.thumbnailUrl || photo.url}
+          alt={photo.title}
+          loading="lazy"
+        />
       </div>
     </div>
   );
