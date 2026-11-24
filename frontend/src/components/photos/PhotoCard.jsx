@@ -90,6 +90,7 @@ const PhotoCard = ({
             />
           </button>
         </div>
+        <div className="photo-card-title">{photo.title}</div>
       </div>
     </div>
   );
