@@ -1,4 +1,4 @@
-import { CheckIcon, PlayIcon, XIcon } from "lucide-react";
+import { CheckIcon, PlayIcon, StarIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 
 const PhotoCard = ({
@@ -60,12 +60,22 @@ const PhotoCard = ({
         <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 z-10">
           {onRemoveFromAlbum && (
             <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onRemoveFromAlbum(e);
+              }}
               className="photo-card-action-btn hover:text-red-600!"
               title="Remove from album"
             >
               <XIcon className="size-3.5" />
             </button>
           )}
+
+          <button>
+            <StarIcon
+              className={`size-3.5 ${photo.isFavorite ? "fill-amber-400 stroke-amber-500" : ""}`}
+            />
+          </button>
         </div>
       </div>
     </div>
