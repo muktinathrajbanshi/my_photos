@@ -156,6 +156,11 @@ const PhotosPage = () => {
         photos={photos}
         currentPhoto={activePhoto}
         onClose={() => setActivePhoto(null)}
+        onToggleFavorite={toggleFavorite}
+        onTrashPhoto={handleTrash}
+        onAddToAlbum={(photo) => {
+          openCreateAlbum?.(photo._id);
+        }}
       />
     </div>
   );
