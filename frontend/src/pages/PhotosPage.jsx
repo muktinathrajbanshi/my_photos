@@ -152,7 +152,11 @@ const PhotosPage = () => {
         />
       )}
 
-      <PhotoLightbox photos={photos} currentPhoto={activePhoto} />
+      <PhotoLightbox
+        photos={photos}
+        currentPhoto={activePhoto}
+        onClose={() => setActivePhoto(null)}
+      />
     </div>
   );
 };
