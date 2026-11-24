@@ -18,7 +18,10 @@ const PhotoCard = ({
     photo.url?.endsWith(".mp4");
 
   return (
-    <div className="group photo-card-container photo-card-hover">
+    <div
+      onClick={onClick}
+      className="group photo-card-container photo-card-hover"
+    >
       {/* Aspect Ratio Container  */}
       <div className="aspect-4/3 w-full relative overflow-hidden bg-slate-100">
         {!imgLoaded && (
