@@ -4,6 +4,7 @@ import { DUMMY_MEDIA } from "../assets/assets";
 import { Film, ImageIcon, Upload } from "lucide-react";
 import Loading from "../components/common/Loading";
 import PhotoGrid from "../components/photos/PhotoGrid";
+import { PhotoLightbox } from "../components/photos/PhotoLightbox";
 
 const PhotosPage = () => {
   const { searchQuery, onOpenUpload, openCreateAlbum } = useOutletContext();
@@ -150,6 +151,8 @@ const PhotosPage = () => {
           onSelectPhoto={(photo) => setActivePhoto(photo)}
         />
       )}
+
+      <PhotoLightbox photos={photos} currentPhoto={activePhoto} />
     </div>
   );
 };
