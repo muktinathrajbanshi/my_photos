@@ -71,7 +71,16 @@ const PhotoCard = ({
             </button>
           )}
 
-          <button className={photo.isFavorite ? "photo-card-favorite-active" : "photo-card-favorite-inactive"}
+          <button
+            className={
+              photo.isFavorite
+                ? "photo-card-favorite-active"
+                : "photo-card-favorite-inactive"
+            }
+            title={
+              photo.isFavorite ? "Remove from favorites" : "Add to favorites"
+            }
+          >
             <StarIcon
               className={`size-3.5 ${photo.isFavorite ? "fill-amber-400 stroke-amber-500" : ""}`}
             />
