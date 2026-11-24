@@ -72,6 +72,10 @@ const PhotoCard = ({
           )}
 
           <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleFavorite(e);
+            }}
             className={
               photo.isFavorite
                 ? "photo-card-favorite-active"
