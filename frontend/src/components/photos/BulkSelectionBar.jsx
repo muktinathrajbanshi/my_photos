@@ -5,6 +5,8 @@ const BulkSelectionBar = ({
   onAddToAlbum,
   onTrash,
 }) => {
+  if (count === 0) return null;
+
   return <div></div>;
 };
 
