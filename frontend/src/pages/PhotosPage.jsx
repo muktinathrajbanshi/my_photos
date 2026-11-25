@@ -167,6 +167,8 @@ const PhotosPage = () => {
       <BulkSelectionBar
         count={selectedIds.length}
         onClear={() => setSelectedIds([])}
+        onFavorite={handleBulkFavorite}
+        onAddToAlbum={() => openCreateAlbum?.(selectedIds) onTrash={handleBulkTrash}}
       />
     </div>
   );
