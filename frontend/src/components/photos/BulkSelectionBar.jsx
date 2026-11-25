@@ -1,4 +1,4 @@
-import { XIcon } from "lucide-react";
+import { CheckSquareIcon, XIcon } from "lucide-react";
 
 const BulkSelectionBar = ({
   count,
@@ -19,7 +19,10 @@ const BulkSelectionBar = ({
         >
           <XIcon className="size-3.5" />
         </button>
-        <span>{count} selected</span>
+        <span>
+          <CheckSquareIcon className="size-3.5" />
+          {count} selected
+        </span>
       </div>
     </div>
   );
