@@ -1,4 +1,10 @@
-const BulkSelectionBar = () => {
+const BulkSelectionBar = ({
+  count,
+  onClear,
+  onFavorite,
+  onAddToAlbum,
+  onTrash,
+}) => {
   return <div></div>;
 };
 
