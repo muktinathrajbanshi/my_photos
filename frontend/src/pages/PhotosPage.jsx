@@ -5,6 +5,7 @@ import { Film, ImageIcon, Upload } from "lucide-react";
 import Loading from "../components/common/Loading";
 import PhotoGrid from "../components/photos/PhotoGrid";
 import { PhotoLightbox } from "../components/photos/PhotoLightbox";
+import BulkSelectionBar from "../components/photos/BulkSelectionBar";
 
 const PhotosPage = () => {
   const { searchQuery, onOpenUpload, openCreateAlbum } = useOutletContext();
@@ -161,6 +162,11 @@ const PhotosPage = () => {
         onAddToAlbum={(photo) => {
           openCreateAlbum?.(photo._id);
         }}
+      />
+
+      <BulkSelectionBar
+        count={selectedIds.length}
+        onClear={() => setSelectedIds([])}
       />
     </div>
   );
