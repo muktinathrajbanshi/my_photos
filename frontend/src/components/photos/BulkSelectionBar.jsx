@@ -1,4 +1,4 @@
-import { CheckSquareIcon, XIcon } from "lucide-react";
+import { CheckSquareIcon, StarIcon, XIcon } from "lucide-react";
 
 const BulkSelectionBar = ({
   count,
@@ -25,7 +25,12 @@ const BulkSelectionBar = ({
         </span>
       </div>
 
-      <div className="flex items-center gap-1 sm:gap-2"></div>
+      <div className="flex items-center gap-1 sm:gap-2">
+        <button>
+          <StarIcon className="size-3.5 text-slate-500" />
+          <span className="hidden sm:inline">Favorite</span>
+        </button>
+      </div>
     </div>
   );
 };
