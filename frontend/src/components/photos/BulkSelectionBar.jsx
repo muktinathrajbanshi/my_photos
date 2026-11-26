@@ -31,8 +31,8 @@ const BulkSelectionBar = ({
           <span className="hidden sm:inline">Favorite</span>
         </button>
 
-        <button onClick={onFavorite} className="bulk-bar-btn">
-          <FolderPlusIcon className="size-3.5 text-slate-500" />
+        <button onClick={onAddToAlbum} className="bulk-bar-btn">
+          <FolderPlusIcon className="size-3.5 text-slate-600" />
           <span className="hidden sm:inline">Add to album</span>
         </button>
       </div>
