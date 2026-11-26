@@ -1,10 +1,9 @@
+import { useOutletContext } from "react-router-dom";
 
 const FavoritesPage = () => {
-  return (
-    <div>
-      FavoritesPage
-    </div>
-  )
-}
+  const { searchQuery } = useOutletContext();
 
-export default FavoritesPage
+  return <div>FavoritesPage</div>;
+};
+
+export default FavoritesPage;
