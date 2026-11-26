@@ -25,7 +25,7 @@ const BulkSelectionBar = ({
         >
           <XIcon className="size-3.5" />
         </button>
-        <span>
+        <span className="text-sm font-medium text-red-600 flex items-center gap-1.5">
           <CheckSquareIcon className="size-3.5" />
           {count} selected
         </span>
