@@ -11,7 +11,8 @@ const FavoritesPage = () => {
 
   const fetchFavorites = async () => {
     setTimeout(() => {
-      setPhotos(DUMMY_MEDIA(5));
+      setPhotos(DUMMY_MEDIA.slice(5, 9));
+      setLoading(false);
     });
   };
 
