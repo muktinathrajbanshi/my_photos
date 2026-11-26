@@ -26,7 +26,7 @@ const BulkSelectionBar = ({
       </div>
 
       <div className="flex items-center gap-1 sm:gap-2">
-        <button>
+        <button className="bulk-bar-btn">
           <StarIcon className="size-3.5 text-slate-500" />
           <span className="hidden sm:inline">Favorite</span>
         </button>
