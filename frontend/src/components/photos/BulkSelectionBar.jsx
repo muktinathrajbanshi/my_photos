@@ -35,6 +35,11 @@ const BulkSelectionBar = ({
           <FolderPlusIcon className="size-3.5 text-slate-600" />
           <span className="hidden sm:inline">Add to album</span>
         </button>
+
+        <button onClick={onTrash} className="bulk-bar-btn">
+          <FolderPlusIcon className="size-3.5 text-slate-600" />
+          <span className="hidden sm:inline">Move to trash</span>
+        </button>
       </div>
     </div>
   );
