@@ -1,4 +1,10 @@
-import { CheckSquareIcon, FolderPlusIcon, StarIcon, XIcon } from "lucide-react";
+import {
+  CheckSquareIcon,
+  FolderPlusIcon,
+  StarIcon,
+  Trash2Icon,
+  XIcon,
+} from "lucide-react";
 
 const BulkSelectionBar = ({
   count,
@@ -37,7 +43,7 @@ const BulkSelectionBar = ({
         </button>
 
         <button onClick={onTrash} className="bulk-bar-btn">
-          <FolderPlusIcon className="size-3.5 text-slate-600" />
+          <Trash2Icon className="size-3.5" />
           <span className="hidden sm:inline">Move to trash</span>
         </button>
       </div>
