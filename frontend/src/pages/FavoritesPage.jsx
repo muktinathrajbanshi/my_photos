@@ -39,7 +39,17 @@ const FavoritesPage = () => {
         </div>
       </div>
 
-      {loading ? <Loading /> : photos.length === 0 ? <div></div> : <div></div>}
+      {loading ? (
+        <Loading />
+      ) : photos.length === 0 ? (
+        <div className="empty-state-card">
+          <h3 className="text-lg font-medium text-slate-800">
+            No fovorites yet
+          </h3>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };
