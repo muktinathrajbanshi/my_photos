@@ -32,7 +32,9 @@ const FavoritesPage = () => {
               </span>
             )}
           </h2>
-          <p>Your started photos and videos for quick access</p>
+          <p className="text-xs text-slate-500 mt-0.5">
+            Your started photos and videos for quick access
+          </p>
         </div>
       </div>
     </div>
