@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
 
@@ -15,6 +15,10 @@ const FavoritesPage = () => {
       setLoading(false);
     });
   };
+
+  useEffect(() => {
+    fetchFavorites();
+  }, [searchQuery]);
 
   return <div>FavoritesPage</div>;
 };
