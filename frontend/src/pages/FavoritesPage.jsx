@@ -32,6 +32,7 @@ const FavoritesPage = () => {
               </span>
             )}
           </h2>
+          <p>Your started photos and videos for quick access</p>
         </div>
       </div>
     </div>
