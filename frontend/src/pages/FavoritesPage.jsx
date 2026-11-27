@@ -20,7 +20,11 @@ const FavoritesPage = () => {
     fetchFavorites();
   }, [searchQuery]);
 
-  return <div>FavoritesPage</div>;
+  return (
+    <div className="max-w-7xl mx-auto space-y-6">
+      <div className="flex items-center justify-between pb-2 border-b border-slate-200/60"></div>
+    </div>
+  );
 };
 
 export default FavoritesPage;
