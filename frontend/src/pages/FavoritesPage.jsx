@@ -25,7 +25,12 @@ const FavoritesPage = () => {
       <div className="flex items-center justify-between pb-2 border-b border-slate-200/60">
         <div>
           <h2 className="text-2xl font-medium text-slate-900 tracking-tight flex items-center gap-2">
-            Favorites {photos.length > 0 && <span>{photos.length}</span>}
+            Favorites{" "}
+            {photos.length > 0 && (
+              <span className="text-sm font-medium text-slate-400 bg-slate-100 px-2.5 py-0.5 rounded-full">
+                {photos.length}
+              </span>
+            )}
           </h2>
         </div>
       </div>
