@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
+import Loading from "../components/common/Loading";
 
 const FavoritesPage = () => {
   const { searchQuery } = useOutletContext();
@@ -37,6 +38,8 @@ const FavoritesPage = () => {
           </p>
         </div>
       </div>
+
+      {loading ? <Loading /> : photos.length === 0 ? <div></div> : <div></div>}
     </div>
   );
 };
