@@ -3,6 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
 import Loading from "../components/common/Loading";
 import PhotoGrid from "../components/photos/PhotoGrid";
+import { PhotoLightbox } from "../components/photos/PhotoLightbox";
 
 const FavoritesPage = () => {
   const { searchQuery } = useOutletContext();
@@ -77,6 +78,14 @@ const FavoritesPage = () => {
           />
         </div>
       )}
+
+      <PhotoLightbox
+        photos={photos}
+        currentPhoto={activePhoto}
+        onClose={() => setActivePhoto(null)}
+        onToggleFavorite={toggleFavorite}
+        onTrashPhoto={handleTrash}
+      />
     </div>
   );
 };
