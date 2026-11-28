@@ -73,7 +73,7 @@ const FavoritesPage = () => {
             photos={photos}
             selectedIds={selectedIds}
             onToggleSelect={toggleSelect}
-            onSelectPhoto={() => setActivePhoto(photos)}
+            onSelectPhoto={(photos) => setActivePhoto(photos)}
             onToggleFavorite={toggleFavorite}
           />
         </div>
