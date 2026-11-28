@@ -46,7 +46,7 @@ const FavoritesPage = () => {
           <h3 className="text-lg font-medium text-slate-800">
             No fovorites yet
           </h3>
-          <p>
+          <p className="text-xs text-slate-500 mt-1 max-w-xs mx-auto">
             Click the star icon on any photo or video in your collection to add
             it to your favorites.
           </p>
