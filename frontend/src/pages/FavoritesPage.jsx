@@ -23,8 +23,10 @@ const FavoritesPage = () => {
   }, [searchQuery]);
 
   const toggleSelect = (id) => {
-    setSelectedIds((prev) => (prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]))
-  }
+    setSelectedIds((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
+    );
+  };
 
   return (
     <div className="max-w-7xl mx-auto space-y-6">
@@ -58,7 +60,11 @@ const FavoritesPage = () => {
         </div>
       ) : (
         <div>
-          <PhotoGrid photos={photos} selectedIds={selectedIds} onToggleSelect={} />
+          <PhotoGrid
+            photos={photos}
+            selectedIds={selectedIds}
+            onToggleSelect={toggleSelect}
+          />
         </div>
       )}
     </div>
