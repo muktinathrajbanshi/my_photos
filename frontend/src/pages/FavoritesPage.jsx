@@ -28,6 +28,14 @@ const FavoritesPage = () => {
     );
   };
 
+  const toggleFavorite = async (id) => {
+    console.log(id);
+  };
+
+  const handleTrash = async (id) => {
+    console.log(id);
+  };
+
   return (
     <div className="max-w-7xl mx-auto space-y-6">
       <div className="flex items-center justify-between pb-2 border-b border-slate-200/60">
