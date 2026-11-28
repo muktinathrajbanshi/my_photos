@@ -1,10 +1,12 @@
+import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 const AlbumsPage = () => {
-  return (
-    <div>
-      AlbumsPage
-    </div>
-  )
-}
+  const { openCreateAlbum } = useOutletContext() || {};
+  const [albums, setAlbums] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-export default AlbumsPage
+  return <div>AlbumsPage</div>;
+};
+
+export default AlbumsPage;
