@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import { DUMMY_MEDIA } from "../assets/assets";
 import Loading from "../components/common/Loading";
+import PhotoGrid from "../components/photos/PhotoGrid";
 
 const FavoritesPage = () => {
   const { searchQuery } = useOutletContext();
@@ -20,6 +21,10 @@ const FavoritesPage = () => {
   useEffect(() => {
     fetchFavorites();
   }, [searchQuery]);
+
+  const toggleSelect = (id) => {
+    setSelectedIds((prev) => (prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]))
+  }
 
   return (
     <div className="max-w-7xl mx-auto space-y-6">
@@ -52,7 +57,9 @@ const FavoritesPage = () => {
           </p>
         </div>
       ) : (
-        <div></div>
+        <div>
+          <PhotoGrid photos={photos} selectedIds={selectedIds} onToggleSelect={} />
+        </div>
       )}
     </div>
   );
